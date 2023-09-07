@@ -1,0 +1,119 @@
+{
+    "bugs": [
+        {
+            "deadline": null,
+            "cf_compver": "???",
+            "resolution": "FIXED",
+            "is_open": false,
+            "creation_time": "2017-08-08T08:26:56Z",
+            "product": "15673 - KC/VIG PH II 26 ASC + Yard (16106)",
+            "last_change_time": "2017-08-25T08:29:13Z",
+            "is_cc_accessible": true,
+            "depends_on": [],
+            "keywords": [],
+            "assigned_to": "patrick.herron@tmeic.com",
+            "id": 2909,
+            "target_milestone": "---",
+            "priority": "Normal",
+            "component": "LCMS HMI Project",
+            "assigned_to_detail": {
+                "id": 53,
+                "real_name": "Patrick Herron",
+                "email": "patrick.herron@tmeic.com",
+                "name": "patrick.herron@tmeic.com"
+            },
+            "actual_time": 0,
+            "flags": [],
+            "creator_detail": {
+                "name": "rafal.czapnik@tmeic.com",
+                "email": "rafal.czapnik@tmeic.com",
+                "real_name": "Rafal Czapnik",
+                "id": 91
+            },
+            "url": "",
+            "op_sys": "Windows",
+            "is_creator_accessible": true,
+            "dupe_of": null,
+            "cf_type": "---",
+            "qa_contact": "",
+            "classification": "MH Projects",
+            "creator": "rafal.czapnik@tmeic.com",
+            "severity": "critical",
+            "cf_warranty": "No",
+            "cc_detail": [
+                {
+                    "id": 78,
+                    "name": "ahmet.durmaz@tmeic.com",
+                    "real_name": "Ahmet Durmaz",
+                    "email": "ahmet.durmaz@tmeic.com"
+                },
+                {
+                    "id": 111,
+                    "real_name": "Amir Furhang",
+                    "email": "Amir.Furhang@tmeic.com",
+                    "name": "Amir.Furhang@tmeic.com"
+                },
+                {
+                    "id": 26,
+                    "name": "benjamin.hummel@tmeic.com",
+                    "real_name": "Ben Hummel",
+                    "email": "benjamin.hummel@tmeic.com"
+                },
+                {
+                    "id": 1,
+                    "name": "Gregory.Hedrick@tmeic.com",
+                    "email": "Gregory.Hedrick@tmeic.com",
+                    "real_name": "Greg Hedrick"
+                },
+                {
+                    "real_name": "Joe Avery",
+                    "email": "joe.avery@tmeic.com",
+                    "name": "joe.avery@tmeic.com",
+                    "id": 49
+                },
+                {
+                    "id": 53,
+                    "name": "patrick.herron@tmeic.com",
+                    "real_name": "Patrick Herron",
+                    "email": "patrick.herron@tmeic.com"
+                },
+                {
+                    "id": 25,
+                    "email": "peter.lapstich@tmeic.com",
+                    "real_name": "Peter Lapstich",
+                    "name": "peter.lapstich@tmeic.com"
+                },
+                {
+                    "email": "ted.barham@tmeic.com",
+                    "real_name": "Ted Barham",
+                    "name": "ted.barham@tmeic.com",
+                    "id": 77
+                }
+            ],
+            "is_confirmed": true,
+            "summary": "LCMS computer is missing TMDN, Proficy Machine Edition, CMS project, drive files",
+            "cf_crmcase": "",
+            "cc": [
+                "ahmet.durmaz@tmeic.com",
+                "Amir.Furhang@tmeic.com",
+                "benjamin.hummel@tmeic.com",
+                "Gregory.Hedrick@tmeic.com",
+                "joe.avery@tmeic.com",
+                "patrick.herron@tmeic.com",
+                "peter.lapstich@tmeic.com",
+                "ted.barham@tmeic.com"
+            ],
+            "groups": [],
+            "estimated_time": 0,
+            "platform": "PC",
+            "blocks": [],
+            "remaining_time": 0,
+            "see_also": [],
+            "cf_customervisible": [],
+            "alias": [],
+            "whiteboard": "",
+            "status": "VERIFIED",
+            "version": "unspecified"
+        }
+    ]
+}

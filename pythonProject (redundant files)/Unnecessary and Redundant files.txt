@@ -1,0 +1,3 @@
+As far as I can tell, these python files are unnecessary and redundant, so everything that has been uploaded into the other folder (Demo Files) should contain everything you need.
+
+These were uploaded prior to completing the demos and before extra documentation was started. There might be something useful in these fils/folders but I dont think that is the case. I am keeping it in just in case someone finds it useful.

@@ -1,0 +1,114 @@
+{
+    "bugs": [
+        {
+            "creator": "David.Stocker@tmeic.com",
+            "dupe_of": null,
+            "cf_crmcase": "",
+            "creator_detail": {
+                "id": 3,
+                "real_name": "David Stocker",
+                "name": "David.Stocker@tmeic.com",
+                "email": "David.Stocker@tmeic.com"
+            },
+            "cc": [
+                "David.Stocker@tmeic.com",
+                "Gregory.Hedrick@tmeic.com",
+                "mario.rodriguez@tmeic.com",
+                "matt.mandros@tmeic.com",
+                "Michael.Bartel@tmeic.com",
+                "niranjan.patil@tmeic.com",
+                "patrick.herron@tmeic.com"
+            ],
+            "product": "ASC Systems",
+            "is_cc_accessible": true,
+            "blocks": [],
+            "depends_on": [],
+            "groups": [],
+            "actual_time": 0,
+            "flags": [],
+            "cf_customervisible": [
+                "No"
+            ],
+            "cf_warranty": "No",
+            "platform": "PC",
+            "estimated_time": 0,
+            "is_confirmed": true,
+            "deadline": null,
+            "assigned_to_detail": {
+                "name": "frederic.mattern@tmeic.com",
+                "id": 6,
+                "real_name": "Fred Mattern",
+                "email": "frederic.mattern@tmeic.com"
+            },
+            "summary": "Add counter value to Götting Transponder System Profibus Outputs",
+            "url": "",
+            "cf_type": "---",
+            "see_also": [],
+            "is_open": false,
+            "severity": "normal",
+            "assigned_to": "frederic.mattern@tmeic.com",
+            "classification": "MH Products",
+            "remaining_time": 0,
+            "qa_contact": "",
+            "target_milestone": "---",
+            "op_sys": "Windows",
+            "last_change_time": "2020-09-30T07:17:59Z",
+            "priority": "Low",
+            "cc_detail": [
+                {
+                    "id": 3,
+                    "real_name": "David Stocker",
+                    "name": "David.Stocker@tmeic.com",
+                    "email": "David.Stocker@tmeic.com"
+                },
+                {
+                    "email": "Gregory.Hedrick@tmeic.com",
+                    "name": "Gregory.Hedrick@tmeic.com",
+                    "id": 1,
+                    "real_name": "Greg Hedrick"
+                },
+                {
+                    "email": "mario.rodriguez@tmeic.com",
+                    "real_name": "Mario Rodriguez",
+                    "id": 96,
+                    "name": "mario.rodriguez@tmeic.com"
+                },
+                {
+                    "email": "matt.mandros@tmeic.com",
+                    "id": 28,
+                    "real_name": "Matt Mandros",
+                    "name": "matt.mandros@tmeic.com"
+                },
+                {
+                    "email": "Michael.Bartel@tmeic.com",
+                    "id": 2,
+                    "real_name": "Michael Bartel",
+                    "name": "Michael.Bartel@tmeic.com"
+                },
+                {
+                    "id": 16,
+                    "real_name": "Niranjan Patil",
+                    "name": "niranjan.patil@tmeic.com",
+                    "email": "niranjan.patil@tmeic.com"
+                },
+                {
+                    "email": "patrick.herron@tmeic.com",
+                    "name": "patrick.herron@tmeic.com",
+                    "real_name": "Patrick Herron",
+                    "id": 53
+                }
+            ],
+            "is_creator_accessible": true,
+            "cf_compver": "Götting Transponder System",
+            "id": 1909,
+            "creation_time": "2016-08-04T19:13:33Z",
+            "alias": [],
+            "resolution": "WONTFIX",
+            "whiteboard": "",
+            "keywords": [],
+            "version": "unspecified",
+            "component": "Sensors",
+            "status": "VERIFIED"
+        }
+    ]
+}
