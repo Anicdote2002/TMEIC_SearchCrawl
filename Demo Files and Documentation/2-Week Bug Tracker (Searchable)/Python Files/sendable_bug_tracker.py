@@ -45,7 +45,7 @@ def run_script(product, component, severity):
         # gets .json of bugs from bugzilla
         response = requests.get(url)
         data = response.json()
-        //print (data)
+        #print (data)
 
         # Initialize a counter for open bugs
         open_bug_count = 0
