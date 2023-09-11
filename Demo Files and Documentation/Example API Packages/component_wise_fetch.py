@@ -1,3 +1,6 @@
+# Author      : Aniruddh Chauhan
+# Date Created: 09/08/2023
+# Description : A python script to generate issues from the different componets file outputs from Bugzilla
 import requests
 import json
 import pandas as pd
