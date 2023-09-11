@@ -1,0 +1,12 @@
+P19687 BeiBu Gulf Maxview Startup
+toolkit for maxview laser alignment
+MAXVIEW IGV model
+MAXVIEW scan the IGV and TRUCK from trolley moving direction
+Maxview Skew and Rotate angle CW/CCW reversed
+Maxview Anti-collision calculation and Control on trigger not ok in new maxview
+Maxview IGV target from 4D not include Trim_List_Skew data
+Maxview.ini Parameter changes for Type D CPUs
+LMS Scanner stuck in Busy State
+MaxviewRT crashes after restart
+Maxview computer DISK is almost full
+Maxview and ACL heartbeat lost
