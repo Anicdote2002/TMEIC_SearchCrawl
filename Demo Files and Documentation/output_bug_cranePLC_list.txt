@@ -1409,3 +1409,5 @@ LED New message from end user
 RE: Communication between Genset controller and Moxa gateway
 B01 Maxbay update
 CGS and Chassis Position Update on ROS_Main In ASC Code
+Update Publish for Yard HMI Points
+Site Update request from ZPMC for Loadcell  CLD and Antilift

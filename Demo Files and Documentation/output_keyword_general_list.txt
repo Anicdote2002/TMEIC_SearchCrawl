@@ -1,9 +1,9 @@
-Fix IP address of Maxview4D computer in host file for 06L
-PU gantry moves to target location and stops instead of going to offset position
-EnterInstruction does not include data for Wkins_Get_ChsProf or Wkins_Put_ChsProf
+Fix IP address Maxview4D computer host file 06L
+PU gantry moves target location stops going offset position
+EnterInstruction include data Wkins_Get_ChsProf Wkins_Put_ChsProf
 LSA reporting setup
-Add RPTMAXVIEW4D to host file
-Specs of LCMS Laptop computer do not match
-Using a TMEIC development license for the LCMS spare laptop
-configuration testing will need to be done on initial setup at site
+Add RPTMAXVIEW4D host file
+Specs LCMS Laptop computer match
+Using TMEIC development license LCMS spare laptop
+configuration testing done initial setup site
 BCT LSA Reporting setup
