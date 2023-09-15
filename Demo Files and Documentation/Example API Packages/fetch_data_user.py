@@ -18,6 +18,7 @@ import time
 import filter_keywords
 from nltk.corpus import stopwords
 
+pattern = r'\b[a-zA-Z]+\b'
 
 base_url = "https://tools.tmeic.com/mh/rest/bug"
 api_key = "9yvSoV8p575uVbPhPxgX9vIqJDbzatyuwMKlTrFV"
@@ -26,14 +27,15 @@ response = requests.get(url)
 json_data = response.json()  # gets .json of bugs from bugzilla
 
 common_words = set(stopwords.words('english'))
-custom_stopwords = ["needs", "needs:", "Need" ,"instead", "be", "nothing", "something", "everything","check","need","due" , "ok", "OK", "Ok", "full", "new", "almost", "start", "lost", "moving", "reset", "restarts", "restart", "changes"]
+custom_stopwords = ["needs", "needs:", "Need" ,"instead", "be", "nothing", "something", 
+                    "everything","check","need","due" , "ok", "OK", "Ok", "full", "new", 
+                    "almost", "start", "lost", "moving", "reset", "restarts", "restart", 
+                    "changes", "If", "if", "message", "end", ]
 common_words.update(custom_stopwords)
 common_words_list = list(common_words)
 
-def search_components():
-    
-    selected_option = option_var.get() # User selected search component
-   
+def search_components():    
+    selected_option = option_var.get() # User selected search component 
     issue_count = 0
     issue_list = []
 
@@ -41,8 +43,7 @@ def search_components():
         if(bug ["component"] == selected_option):
             issue_list.append(bug["summary"])
             issue_count = issue_count + 1
-    
-    
+       
     if (issue_count > 0):
         result_label.config(text="Success!\n")
     else:
@@ -52,27 +53,32 @@ def search_components():
     filtered_data = [filter_keywords.remove_words(summary, common_words_list) for summary in issue_list]
     filter_keywords.keyword_max_counter(filtered_data)
     
+    keywords_set = set()
+    for filtered_sum in filtered_data:
+        valid_keyword = re.findall(pattern, filtered_sum)
+        keywords_set.update(valid_keyword)
+    keywords_list = list(keywords_set)
 
-    
-    # keywords_list =[]
-    # for word in filtered_data:
-    #     word = filtered_data.split()
-    #     keywords_list.extend(word)
+    with open("keyword_list.txt", "w") as keyword_file:
+            for item in keywords_list:
+                keyword_file.write(item + "\n")
 
-    # for keyword in keywords_list:
-    #     for bug in json_data["bugs"]:
-    #         if(bug["summary"].split() == keyword):
-    #             print("it works!")
-
-
-
-
-
-
-
-
-
-
+     # Initialize empty lists for each keyword in the dictionary
+    grouped_data = {}  
+    for keyword in keywords_list:
+        grouped_data[keyword] = []
+        for bug in json_data["bugs"]:
+            if keyword in bug["summary"].split():
+                 grouped_data[keyword].append(bug["summary"])
+ 
+                #  with open("grouped_issues_based_on_keywords.txt", "a", encoding="utf-8") as file:
+                #         file.write(bug["summary"] + "\n")
+    for keyword, summary_list in grouped_data.items():
+        print(f"Keyword: {keyword}")
+        print("Associated List:")
+        for summary in summary_list:
+            print(summary)
+            print("\n")
 
     with open("component_fetch.txt", "w") as file1:
         for item in issue_list:
@@ -81,9 +87,6 @@ def search_components():
     with open("component_fetch_filtered.txt", "w") as file2:
         for item in filtered_data:
             file2.write(item + "\n")
-
-    
-
 
 # Make the Window for the User Input 
 GUI_window = tk.Tk()
@@ -104,11 +107,7 @@ search_button.pack()
 
 result_label = ttk.Label(GUI_window, text="")
 result_label.pack()
-progress_bar = ttk.Progressbar(
-                GUI_window, orient='horizontal',
-                mode='determinate',
-                length=280)
-
+progress_bar = ttk.Progressbar(GUI_window, orient='horizontal',mode='determinate',length=280)
 progress_bar.pack()
 GUI_window.mainloop()
 

@@ -1,0 +1,1092 @@
+BCT LSA Reporting setup
+Twin20 PU Knock the container when TwinGap is not ready
+No warning/alarm trigger to PLC when given CGS PU instruction with no container on the truck
+Target out of position is not triggered during PU
+Two Trucks parked nearby CGS DO and CGS rear 20 PU no solution and Pole lamp behind truck CGS PU failed
+TargetBad when PU on Rack
+Container Auto landing on truck offset/bias value not getting updated for the Auto PU solution and solution of Auto PU/DO is off in X,Y and skew
+Auto PU and DO of 20 feet different issues
+07_14_01C PU and DO location not display
+Auto PU no solution when 2-20 loaded
+When front 20 PU instruction given CGS solution is given for rear PU
+Maxview4D PU 20ft middle no solution
+LSA_PUSolutionValid and LSA_DOSolutionValid bits are on for LSA PU
+40ft chassis seen as 20ft chassis when PU middle in v03.0.27.6
+Enable Push function for LSA PU and DO as per SIPG request
+PU 20FT container on the rear of a chassis
+Night Mode LS Auto Landing Fault after LSA PU code installed
+Failure in LSA PU 20FT box in a chassis with 2 x 20FT boxes
+Failure LSA PU 20FT box from 20FT standard chassis - no solution
+LSA PU solution is not good when the truck is parked far away in X direction
+LSA PU takes more than 60sec to provide solution
+Separated PT chassis scan start and end position for PU and DO
+Prevent auto flipper up for LSA PU when there is a single 20ft container on chassis
+PU gantry moves to target location and stops instead of going to offset position
+20 Foot Rear PU and DO no Solution
+Increase Gantry_Trg_Tol for LSA PU DO
+Gantry Offset setting incorrectly when PU and DO is in LS
+Customer request to add feature to generate LSA solution without executing PU DO
+Clear valid signals when LSA_DisableFunctions is true on PU
+Control Spreader skew pos during manual LSA PU DO
+CrnRqOpr Change - Customer Request to remove ROS from LSA PU sequence
+4D Failed to PU 40 Ft Container from Chassis on OTR(Elevated road)
+4D Has solution to PU Real Container from OTR Chassis and landed with a big Y Error
+Maxview failed to PU the Tier 1 Container( low energy level)
+LCMS computer is missing TMDN, Proficy Machine Edition, CMS project, drive files
+Proficy ME License Missing from LCMS
+Perm Screen buttons do not work on ESTOP screen on LCMS
+LCMS Not able to start CMS datalogger through setup process
+Drawings need to be updated on LCMS
+Point update necessary for current LCMS project in the office
+LCMS UPS Faults when Plugged into GFI Outlet
+List of issues with LCMS HMI project
+The CIMPLICITY Dynamic Graphical Replay (DGR) is not licensed on the LCMS computers.
+Communications screens in LCMS needs correction
+Production data - PLC LCMS communication issue
+Windows OS crash on LCMS after UPS software shutdown.
+The operating systems on the LCMS computers are crashing.
+Gdynia site needs configured LCMS computers for first NIT cranes
+Historian, database, prod & maint utility GEOPC is not set up on LCMS computers
+LCMS renaming to match RMG number
+RE: HMI LCMS and RCMS units
+The Blocked Locations screen has several LCMS HMI points that are not resolving.
+Add KC Digital Manuals to LCMS computers
+LCMS version from site to create next Master release
+Crane Plc backup needed for the LCMS HMI project release 4.0
+LCMS HMI virtual point added to indicate the RMG HMI project version.
+LCMS Data Init block had an #Alw_off NOCON
+Missing plc addresses for the LCMS permissive screen
+Update the - LCMS System User's Manual
+MAXVIEW4D related error in LCMS and RCMS for troubleshooting
+ACM do not have and LCMS Button Warning indication
+LCMS HMI project points in ROS screens need to be replaced with Yard HMI points.
+LCMS recovery following power loss
+LCMS Computer Low Memory Warning
+LCMS computer does not have dual video output
+Customer requires updated LCMS code for OEM commissioning
+add points to LCMS HMI project
+add points to LCMS HMI project
+ASC701A LCMS HMI V01 Release
+LCMS Trolley screen collections
+LCMS Micro Motion collections
+Additional LCMS computers needed in Gdynia
+Unable to install historian on reimaged LCMS computer
+Update LCMS computer IP address
+Renaming QC15 LCMS computer is required
+Renaming QC16 LCMS computer is required
+NITQC15 LCMS HMI Releases
+NITQC16 LCMS HMI V01 Release
+UPS Configuration on LCMS
+LCMS project ASC10W issues with system faults
+need to do points update LCMS HMI project and check.
+The end user has requested that the Windows/CIMPLICITY "CmsGuest" account be added to all the LCMS computers.
+LCMS monitor mounting
+LCMS Monitor Mounting Bracket
+Licenses for 15W LCMS Computer
+Gantry 2 Drive Mode status signal needs updating on LCMS Main Screen
+ASC08L LCMS HMI V02 Release
+ASC10L LCMS HMI V01 Release
+ASC10W LCMS HMI V01 Release
+Toolboox GE program not connecting to the Drives from LCMS
+Release of LCMS version 2.0
+Issue with TMdN instalation on ASC30W LCMS
+Site practice for monitoring LCMS logging functions
+LCMS points and alarm update
+LCMS Comm Test/As Shipped Documentation
+Gantry Calibration Position button in LCMS Screen
+LCMS Production Data is Empty
+LCMS MoveList, Report and Rates
+Alarms (from PLC) logging time is not synchronized with LCMS computer time
+Install and configure NetTime on LCMS computers.
+ASC701A LCMS HMI V03 Release
+ROS desk can't login and LCMS HMI creeens script error
+LCMS HMI V04 Release
+Deleted the useless alarms for TPMS and modify the TPMS screens for LCMS and HMI
+LCMS HMI V01 Release
+TMdN drive license in one LCMS is invalid by some reason
+LCMS HMI V01 Release
+LCMS Load Bypass not correctly implemented
+LCMS PC name and cimplicity software license risk
+LCMS HMI V02 Release
+After LCMS reimage tmdn crashes even after uninstall reinstall
+SIPG complains 13L LCMS Windows not activated
+Land sensor by pass function in LCMS
+Trender utility tool for LCMS - SCU new firmware.
+Update TMdN License for replaced LCMS computer
+Latest version of LCMS buid checklist
+VMS displayer on LCMS
+LCMS failed to boot at CX Island
+LCMS HMI V05
+LCMS not updating data from PLC, no new data in LCMS and CabViewer
+Missing Alarm data for LCMS
+LCMS HMI V03 Release
+LCMS HMI V04 Release
+LCMS Hmi 4.0 modification and bugs
+Some of live data display with black color when reboot the LCMS computer
+LCMS HMI V01 Release
+LCMS logs off automatically, closing all applications
+RE: LCMS do not auto start after power loss
+Problem with ODBC connection with SRVTMEICYS sql database in LCMS
+LCMS to PQM Serial Communication-Crane 81
+LCMS HMI V06
+LCMS HMI V05 Release
+LCMS sql server database clear '_log' table data
+LCMS HMI Project V02 Release
+LCMS HMI Project V02 Release
+LCMS HMI Project V00 Release (Duplicates)
+Crane 17 and 18 backup LCMS computers have the wrong sim version of PME installed
+Backup LCMS laptops have broken GSDML files in the toolchest.
+LCMS HMI V00 Release
+LCMS HMI Update package sim20
+STS85 LCMS PC High Memory Usage
+LCMS v07.00 Site release
+Add logic&variables for LCMS power off function
+Add LCMS power restart function to YardPLC
+Add button for LCMS power off function
+Drive Fault Help - LCMS HMI can't navigate to fault code in TMDN.
+LCMS HMI - Can't Navigate to I/O (Direct I/O to an alarm) in elementary drawing.
+LCMS HMI - CraneId.bcl script error.
+LCMS HMI - Button with specific PLC variable link does not appear on screen
+LCMS HMI - Cameras Screen development pending
+LCMS HMI V00 Release
+Add LCMS restart function
+LCMS Windows Stuck at "Welcome"
+Add LCMS restart function (P20847)
+LCMS HMI V00 Release - P21155
+LCMS computers do not start automatically
+LCMS HMI V01 Release - P21155
+LCMS add Power data record
+Need to update alarm history screen to get time/date from LCMS computer instead of PLC
+LCMS add Power data record (P20847)
+LCMS HMI V02 Release
+Specs of LCMS Laptop computer do not match
+Using a TMEIC development license for the LCMS spare laptop
+LCMS HMI V01 Release - P20933
+LCMS Firewall Has To Be Disabled For Cab Viewer To Communicate With LCMS
+LCMS HMI V00 Release
+LCMS HMI V02 Release - P20933
+LCMS HMI V01 Release
+LCMS HMI V03 Release - P21155
+LCMS PC BIOS Time Setup
+No connection between PQM and LCMS computer
+LCMS Maintenance and Production blocks with addresses
+ZPMC Reports That TMdN Will Not Open On LCMS
+Fix YPLC-ASC EGD GP11 Mapping
+Fix addressing for Block20-23 Reefer Gates
+Maxview 4d State 23 Fix & AtTarg update
+Fix IP address of Maxview4D computer in host file for 06L
+LSA to State 56 Fix
+LSA to State 62 Fix
+Trolley in LSA Auto Pos Fix
+LSA Pause Enable Fix
+Fix block 2_3 Landside Lamp Test for AutoAck_IL
+Modification for Trolley Prefered path load offset
+Excessive LMS calibration -  scan angle offset
+Added logic for commissioning calibration gantry offset calculation
+Remove Slope offset from Dynamic Torque test fault
+BTG offset
+add offset compensation for internal truck CGS
+M8 single laser beam angle or position offset
+Not getting a 4D solution / completed until gantry reaches offset position
+PU gantry moves to target location and stops instead of going to offset position
+DO 20 foot Rear not returning from offset position
+Add separate gantry offset for 40
+Add Trim offset for Slope - BCT
+EnterInstruction Setup at site on ROS computers
+EnterInstruction utility does not work with the Old cranes
+EnterInstruction keep spaces in Orig_Cell, Dest_Cell fields when entering instruction into Command Table
+Updates to EnterInstruction for Haifa TOS interface name changes
+EnterInstruction Setup
+EnterInstruction generates invalid 'Move Only' instructions
+Sending instructions on block 703 using EnterInstruction  -  issues after TOS testing
+Cannot send instructions to truck lane using EnterInstruction
+EnterInstruction bug prevents "Enter Container ID" Dialog from appearing
+EnterInstruction does not include data for Wkins_Get_ChsProf or Wkins_Put_ChsProf
+CraneDirector 2.7.0.9 released to fix issues with location string decoding
+DPW requires Cabin display GPS location like old cranes
+TPMS tire location were incorrect
+Some times when the internal trucks are near the location of DO is not detected by 4d
+Enter new location doesn't work
+07_14_01C PU and DO location not display
+Revised the container location for MxVw4d
+Display Target location - Crane location
+Display of Measured target location compared to ideal target location (delta) – while hoist down
+Display PU/DO location
+PU gantry moves to target location and stops instead of going to offset position
+RE: Hoist absolute encoder mounting location
+Some Instructions are not logged in the LSA reporting tool.
+Maxspeed reporting tool flooding network with authentication requests
+Online upload and compare (backup job) reporting differences when PLC and versiondog server versions are equal
+PLC is reporting that communication between Maxview4D and MaxviewASC is not ok
+LSA reporting setup
+Error RS002 Tried to add entry to reporting database but failed
+AUP file needs to be updated to include multicast group 10
+Update RCMS user manual to include Block C1 OOG function
+Maxview IGV target from 4D not include Trim_List_Skew data
+EnterInstruction does not include data for Wkins_Get_ChsProf or Wkins_Put_ChsProf
+Point update to include Floodlight Requests
+BCT Initial Release V21_00
+Site request CraneDirector Licences for BCT
+BCT LSA Reporting setup
+Add Trim offset for Slope - BCT
+SPLC Estop after un-stowing - BCT
+Add Missing Hoist SD Logic - BCT
+BCT Site Release V21.04
+Pendant selector switch logic for gantry and telescope needs to be changed
+Gantry emergency plug connected is changing hoist speed reference instead of gantry
+Moving one gantry for stow pin placement
+Cable Reel Run Command applied without gantry run, fwd, rev permissives
+Prisma is installing additional grounding cables for gantry brakes rectifier circuits
+No warning/alarm for losing the gantry storm pin disengage signal
+Excessive gantry calibration errors (Puck position table provided by the OEM)
+Water side gantry slowdowns for WS entry permit causing faults.
+Removing the gantry stow position limit switch
+New gantry control from pendant logic
+Landside Reefers don't have the gantry reefer magnets
+Update to Load Dependent trolley position for gantry travel
+Changed gantry zero speed level and timer values
+Change gantry estops to normal stops
+Added logic for commissioning calibration gantry offset calculation
+Created Gantry Alarm messages to record gantry speed and positions of estops
+Gantry skew trip and gantry Estop/Run logic
+Main screen's modification about gantry items
+Requisition Punch List- Optimized Path in same gantry bay
+SIPG Request to lower the spreader at gantry station when landed
+SIPG Request to lower the spreader at gantry station when landed
+SIPG Request to lower the spreader at gantry station when landed
+Trolley at cantilever is dropping gantry run permissive, which prevents running in auto
+Customer want to cancel the Far side  gantry Reefer Area Limit Switch
+Horn active when gantry is moving in auto
+Typo in the ACL gantry slowdown logic
+Horn active when moving gantry from ROS desk
+Add the interlock protection that gantry can’t move when any wheel turn over travel signals is missing
+When shore power is connected, the maximum of 20% speed will be allowed for hoist, trolley and gantry
+Added the logic to detect gantry whisker switch faults
+LRR relay should not reset 4 gantry obstruction anti-collision scanners
+Increase sensitivity to gantry (re)calibration errors during LSA
+Replace ALL proximity switches for the gantry brakes.
+Update logic about gantry waiting position before cross reefer
+Request to modify gantry steering control
+Truck lane bit mustn’t block gantry movement.
+prove the gantry calibration method is ok
+Hardware configuration for Block 6 gantry farside analog input module
+Customer wants different toggle switch for gantry operator station
+Hoist Slack permissive to gantry and Trolly motion change
+Increase gantry 1&2 AbsEnc rotation check speed from 1% to 1.5%
+update gantry zone tolerance logic when gantry is at reefer
+Generate alarm when gantry running and the BTG transponders are not detected for a certain time
+Start CGS triggering when gantry arrives the target
+Update gantry zone limit for haifa
+Drive TL_F3_ fault gantry still running
+gantry bumper logic change
+single gantry run function forbidden
+Motion in trolley and gantry moves the crane/scanners out of the view
+gantry on anchor position indication
+gantry cable reel motor brake control - contractor rating confirm
+MaxviewRT can't start gantry scanners
+Enable gantry panel switch fault only on C1
+Update gantry inertia
+Please help confirm all gantry motor temperature signals are boolean or analog value
+During DO LSA system is sending 2 different gantry position as the solution (difference is more than 200mm)
+LSA solution for drop off is more than 200mm off from ideal gantry position
+Prevent gantry movement when trolley in cantilever area during LSA
+Not getting a 4D solution / completed until gantry reaches offset position
+Enable trolley and gantry movement when landed sensor fault to complete the job manually
+OCR Interface needs gantry speed feedback added
+Prevent auto flipper down during start of the instruction when gantry in special bay
+Allow ROS operator to set gantry position valid bit when there is a position difference fault
+4D solutions consistently giving gantry estimated position off by 50 mm
+Updated gantry anticollision logic when approaching other crane which is stowed
+SIPG requested to bypass trolley and gantry zone limits in special condition
+PU gantry moves to target location and stops instead of going to offset position
+Add separate gantry offset for 40
+Bypass Hoist Break fault for gantry stop
+Bypass Hoist Break fault for gantry stop (P20847)
+IGV lane gantry bigger Y
+Reduced gantry speed only required when collecting data
+Trolley part and gantry model can't appear
+Move gantry to LSA start scan position
+Ground wire connection terminals provided inside the gantry motor terminal box not adequate.
+configuration testing will need to be done on initial setup at site
+An order which has not been done has been set as complete
+Maintgate Bad Entry Logic Using Incorrect Signals
+Brakes screen has the OOS Pos indication Using LsASCatOutSrv
+Brakes screen has the OOS Pos indication Using LsASCatOutSrv
+New Tool Using MenuSelect1 Point should be screen variable
+Waterside Logic Using WS_TZMode instead of UseLaser2
+Slack Gantry Cable When Using an Estop PB
+Using a TMEIC development license for the LCMS spare laptop
+EGD configuration for RPLC and YPLC not correct on all cranes
+AUP file needs to be added to the hardware configuration
+EGD Input configuration has been swapped
+Port configuration Master_S90TR10 Mode was set %M1019
+Hoist absolute encoder hardware configuration adjust
+SSAM configuration issues
+Cable reel hardware configuration update and code change
+Incorrect hardware configuration of Trolley IO versamax module
+Added a profibus slave for ARCK sensor in the cab configuration and imported 3 blocks
+AGSS was assigned 80Byte in/100Byte out in the configuration
+The configuration in both “DSV01ConsExch” and “TSV01ConsExch” has been modified
+EGD configuration about the 4 anti-sway motors have been renamed and modified
+The GSD was replaced with DP/DP Coupler for DP slave 6 (spreader) in the cab configuration
+New ETM Module configuration for Multicast
+Hardware configuration for Block 6 gantry farside analog input module
+Cab Viewer Screen configuration wrong
+Change the Backplane from 12 Slots to 7 Slots in hardware configuration
+ROS NIU configuration modification
+RE: io-mcp station profinet hardware configuration
+RIO_08 EGD configuration and Cantilever target job position modification
+configuration testing will need to be done on initial setup at site
+RCMS screens development work not completed
+PLCAnalysis: Update pyxref.exe to remove 6-month development expiry
+LCMS HMI - Cameras Screen development pending
+Using a TMEIC development license for the LCMS spare laptop
+Ground in the Land side area for Auto moves has a slope
+FWD command is off after Trolley moves to cantilever, without active instruction, operated by Maintenance ROS
+Motion in trolley and gantry moves the crane/scanners out of the view
+PU gantry moves to target location and stops instead of going to offset position
+Repeat Move not disabled for Manual moves
+Crane requests ROS operator during LSA moves
+OEM scanner target not built to specifications
+ASC Maxview release A04 - excessive target measurement skew error
+VMR for Trolley/Gantry Target is using the incorrect target position for DropOffs
+MaxviewRT losing the LMS3 spreader target
+MaxviewRT losing the LMS4 spreader target
+MaxviewRT losing the LMS2 spreader target
+Abort logic sequence with drop off target has issue
+Clearzone scanners do not have a fixed target.  Logic is checking target for Scanner OK
+Clearzone scanners do not have a fixed target. Logic is checking target for Scanner OK
+CGS -RED traffic light turns OFF when trolley is at target (in truck lane)
+VMR for Trolley/Gantry Target is using the incorrect target position for DropOffs (Haifa edition)
+Trolley target number to ROS is wrong for even cranes
+Start CGS triggering when gantry arrives the target
+Display of Measured target location compared to ideal target location (delta) – while hoist down
+Display of zPos height from each scanner and zPos height of each target
+Issues finding target in rain
+Trolly target lane value miss
+Auto target job GUI not working
+LansideIO - Phase 5 - Added target for Block #1
+Issu happened when dest target is IGV but Manually drop off in RMS
+Maxview IGV target from 4D not include Trim_List_Skew data
+Updated maximum target height for maxview
+Loosing spreader target when dropping the container on the chassis during LSA
+target display modification
+When trucks are close to the target truck LSA doesn't generate solution
+Modify VMR_Gan_Trg and VMR_Trol_Trg target position
+Modify VMR_Gan_Trg and VMR_Trol_Trg target position (P20847)
+Maxview cannot see the target when landing 20ft container on the chassis with rear loaded
+RIO_08 EGD configuration and Cantilever target job position modification
+Test target for API interfacing.
+PU gantry moves to target location and stops instead of going to offset position
+Gantry not moving to LSA target position
+points about target lane should be published
+Change to Manual when Maxvie4D Chassis target mismatch
+CGS sometimes have solution and sometimes No target container detected in the scene!
+Source Drive file needs to be reviewed
+Gantry Cable reel encoder as shipped GSD file not communicating with device
+Cable reel drive - confirm drive file settings
+VIG Drive Group file
+AUP file needs to be updated to include multicast group 10
+Host file Rev 9.0 needs adjustments.
+Typo in Maxview_Hosts.ini file
+AUP file needs to be added to the hardware configuration
+Gdynia site needs information regarding NIT cranes orientation in the yard and host file
+Need Host file update with the Time Server
+Updated Host file
+DB panel drive file
+Wrong INI file for CraneDirector
+Supplied drive lineup had newer firmware than the drive file used so far
+VIG Block 1 was never configured/added to YARD RCMS Project file
+Remote view of crane selected, tools tab is selected in menu, attempt to open plc and does not map to new plc file
+Host file is not available for the P18275 project.
+Drive file engineering completion for Project 17839 Kone for GPA Vacon Drives Upgrade
+RE: A800 Emergency Hoist/Boom drive file
+Micro motion ABS gsd file modify
+host file version 9.0 release
+Update Hosts file
+Drive file  for crane 37
+Host file update with LSA
+Host file updated to version 10.0
+Host file update with Gantry PTZ
+The CamViewer installation and settings file needs to be updated.
+Maxview4d error- Failed to archive file PlaybackCapRT.mv4d
+Install MaxSpeed Performance Tool with Advanced Analysis Function on commissioning file server
+New Host file Release
+Invalid 4D License file found on spare PC for this project (As per customer)
+No license for Machine Edition on file server
+YangShan P4F Host file
+office activation on file server
+ZoneManager can't create corresponding RX3i file
+host file update
+The drive parameter file looks incomplete. Please update it
+Computer name is not matching the host file in the HMI server SRVTMEICYS
+4d file management module is not cleaning up the old playback files
+Disable detailed logging for PT in Maxview4DConfig file
+MaxviewRT ini file addition to support LSA
+Host file mismatching
+Wrong Project Name and Number in egdservice.cfg file
+YangShan P5 Host file
+hosts file v2.0.19
+Cannot open playback file after updating maxview to new version
+Problems in opening the playback file in new version
+Fix IP address of Maxview4D computer in host file for 06L
+Maxview4D trying to load Maxview.ini file
+As commissioned Drive file
+Motor name plate and drive file setting
+Add RPTMAXVIEW4D to host file
+Host file
+P20187 drive file
+As commissioned Drive file
+lost correct cms200.ini file when open ROS HMI main screen
+As commissioned Drive file
+Can not open the playback file
+Hoist inc slow down speed to match KAuto_HstSlwRf when locked in Auto
+LCMS renaming to match RMG number
+Modify SPLC from site backups to match current crane
+E-Stop screen doesn't match with actual E-stop switch signals
+FloorHeight value being sent to PLC does not match floor height value being read for the PU/DO
+BayProfile - Maxview bayprofile row index does not match current ASC row index
+ROS punch list-Spreader's signal lights on the HMI does not match the actual spreader light
+ROS punch list-Flipper position on the HMI does not match the actual flipper position
+AGSS reference speed does not match feedback on RTG25
+HMI Alarms do not match their description
+Specs of LCMS Laptop computer do not match
+AC Control Modifications after testing at site with Frigerotec
+Procedure for Gantry Emergency Operations testing
+Added Commissiong folder to place startup testing logic
+Logic re-order for Gantry Natural Skew testing
+The Semi Auto Control testing is not giving good results, need support from Salem
+Sending instructions on block 703 using EnterInstruction  -  issues after TOS testing
+configuration testing will need to be done on initial setup at site
+Add driver verify button on ROS_Main screen for testing
+Ulk1_Bypass_Enb and Land2_Bypass_Enb had initial Value set to ON
+Updated the initial value for YPLC1_Mv4DCG_OnRq to On
+State 42 (HOIST slow for initial LSA Pickup) bypassed
+configuration testing will need to be done on initial setup at site
+AC Unit Going to WarmUp mode when PLC stops and starts
+Maintenance gate illegal entry stops two cranes instead of 4 adjacent cranes
+Change gantry estops to normal stops
+External E-Stop stops Trolley after a delay
+External E-Stop stops Trolley after a delay
+External E-Stop stops Trolley after a delay
+PU gantry moves to target location and stops instead of going to offset position
+Gdynia site needs information regarding NIT cranes orientation in the yard and host file
+EGD.ini incorrect host names
+host file version 9.0 release
+host file update
+Computer name is not matching the host file in the HMI server SRVTMEICYS
+Fix IP address of Maxview4D computer in host file for 06L
+Add RPTMAXVIEW4D to host file
+Add counter value to Götting Transponder System Profibus Outputs
+Add SAFEWAY speed window alarm to PLC code
+Add ASC Perm Bypass button to RCMS Gates screen for drive-in gates.
+Add KC Digital Manuals to LCMS computers
+Harmonic Filter Commission Procedure - Add grounding and harmonic
+YardOverview Screen, Add buttons to toggle Stack view.
+Landside FX Class Change - Add global bit that allows toggling of 'Driver step off mat' message
+Add automation tags to the historian.
+Add Gantry Torque Proving fault to Run Perm
+Add logic for additional desks
+Add "Step_Down_Enable" to Parameter
+Add Individual EStop Alarms
+Add Alarm for Hoist_ACMAuto_Sw
+Add Gantry_SlwDnCkLs_Af to Gantry Estop
+Add missing logic for Block 28,27 Blk28.Reef_Occ_PB Blk27.Reef_Occ_PB
+Add calibration messages
+Add Powerup time delay to CblRl_WrapNumMismatch_Aw
+Add Separate Point for Trolley Brake test
+Add op Msg for Gantry_DynTestRunTime_Af
+Add addressing for Blk03-04 gate variables
+Add the HV room OVERTEMP signal
+Add LsMGOpnRq, WsMGOpnRq to CMSClearRqs for Blocks 03_04, 09_10, 21_22
+Add Yard Temperature/Humidity sensor to block 07 LSIO
+Add enable Parameter for Auto_TrgUTR
+Add alarms for PILZ I/O and ROS Remote I/O station
+Add Trolley Inclination Tool to the PLC Software
+No Windows/Cimplicity Cmguest Account-Need to Add
+Customer Request: Add Boom Run Time to Reports
+Add the time-out interlock protection for wheel turn when going to 16 degrees and 90 degrees
+Add the interlock protection that gantry can’t move when any wheel turn over travel signals is missing
+Add Gantry Obstruction operator message
+Add sensor/equipment export/import feature
+Add trolley motor brake wear fault signal to trolley run permit
+Add FS operation station authority of Gantry
+Add Hoist brake wear IL
+Add Gantry Horn Request
+Add CMS alarm for AGSS system switch
+Add 9 variables to the ASC08W exchange
+Add variables to display motor temperature and other information
+Add Tilt angle change logic when CGS measurement jumping or no solution
+Add scripts to record user role ID
+Add ACL slow down forward and reverse stop bypass
+Add  Constant temperature to Gantry Driver
+Add ROS desks 15-25 to RPLC Rev12.0
+Add hoist down interlock to GANTRY WARNING LIGHT AND HORN.
+Add new variables for display VMS valuse
+Add Container Door open detection and Twistlock detection system Profibus
+Add Farside Gantry stowpin in position LS
+Add the lamp indication on CA1,CA13
+Add code to record BTG position calibration error
+Add Loadcell alarm to CMS
+Add hoist gearbox over temperature alarm in PLC
+Add A9_A10 special bay check height
+Request to Add Local/Auto Select Button to RCMS Screen Block C1
+Add Flipper Fault Ros bypass
+Add estop operation message to ROSHMI
+Add CMS screens for condition monitoring system
+Add CabelReel Breaker alarm
+Add Bay 0 as transfer area
+Add points about maxvw4D device
+Add 20ft Chassis length(Chassis profile) to 4D
+Add Gantry Anti Collission Fault messege and manual request
+Add container door open and twistlock detection function
+Add  Twistlock Protection
+Add serseq31&56 Auto_CrnAtTrg time delay
+Add Fence1 hoist and trolley position  protection
+Add some points/alarms/historian
+Add hoist gearbox over temperature alarm in PLC (P20847)
+Add Twistlock Protection (P20847)
+Add serseq31&56 Auto_CrnAtTrg time delay (P20847)
+Add Fence1 hoist and trolley position protection (P20847)
+Add logic&variables for LCMS power off function
+Add LCMS power restart function to YardPLC
+Add JOB_POS display
+Add button for LCMS power off function
+Add variables and logic to show primary/sceondary Yard PLC status in HMI
+Add variable and logic to show primary/sceondary ROS PLC status in HMI
+Add ROS pLc status display and change 'LANE' dislay
+Add Yard pLc status display
+Add LCMS restart function
+Add auto land fault alarm for LSA jobs
+Add LCMS restart function (P20847)
+Add micromotion Slowdown
+Add Gantry brake stroke Calibration function
+Add Telescope interlock to twistlock lock
+Add Telescope interlock to twistlock lock (P19687)
+Add OCR illumination bit to control the girder lights in night
+Add Additional ACM Parameters
+Add Operator account
+Add missing Site PLC changes to Master
+Add separate gantry offset for 40
+Add LSA_DrvOnMat_En missing coil
+Add missing contact for LSA_Auto_Land_Af
+Add RPTMAXVIEW4D to host file
+Add Alarm for DriverAck timeout
+Add driver verify button on ROS_Main screen for testing
+Edit RCMS_Main to Add two Buttons for Crane to operate in adjacent block.
+Add ROSXX.Enable and ROSXX.InProd points
+Add Reference Address To PLC Project for Scanner Power Off Relay
+Add Reference Address for MVSL Enable/Disable Switch to be Added in E-house
+Obtain Backups of Quickpanel Screens & Add Screen For MVSL
+Add Trim offset for Slope - BCT
+Add Gantry_AtLS contact to LSA_PulseButton_States
+Add Missing Hoist SD Logic - BCT
+Add OCR Camera to Camview
+RE: Add a block for CCTV control
+PASolutions license for SSAM and IOServices
+The Proficy software license on the File Server virtual machine is incorrect.
+Maxview4D license needs to be added to batch 2 computers
+PASolutions license needs to be updated
+PASolutions license needs to be updated
+PASolutions license needs to be updated
+Maxview4D computers will need OS license stickers
+ASC09W cimplicity license
+license will expire in 30 days notice
+Account for OCR license plate reading requirements from both travel directions
+TMdN drive license is invalid for 706B CMS
+ROS01 is missing the cimplicity license
+After power outage on Friday, Cimplicity on HMI server lost license
+RE: An warning with "The Proficy license has a detected a change or removal of license"
+TMdN drive license in one LCMS is invalid by some reason
+TMdN drive license in ASC704W is invalid by some reason
+TMdN drive license in ASC706L is invalid
+LCMS PC name and cimplicity software license risk
+HMI without license and doesn't work - RCMS09 and RCMS10
+TMdN drive license in ASC703L is invalid
+TMdN drive license in ASC704L is invalid
+ASC06L TMdN license not valid
+No license for Machine Edition on file server
+TMdN license required for 710B
+Check office license on 701C and 702C
+File Server Proficy license install
+CraneDirector license Expired
+TMdN license required for 708B
+ASC02WCMS lost cimplicity license
+HmiServer Cimplicity license expired
+ASC03LMXS4D EGD service can not start and license invalid
+Crane 18 missing cimplicity license
+Acronics True Image 2020 license not active in ROS1 and ROS4
+ASC08L Cimplicity license lost after Computer restarted
+TMdN license required for 707B
+Using a TMEIC development license for the LCMS spare laptop
+MaxView license request
+IP address update from the End User. Camera IP addresses will need to change.
+Maxview IP address changed following power outage
+ClrZn19 Inputs - Wrong IP Address
+Blk14 - Blk29 Yard IO Project IP Address Issues
+Updating IP addresses on CMS
+Host File Version 8.0 Release - IP address changes
+IP address changes from 172.25.x.x to 10.121.x.x
+updated config files for new IP addresses
+Update maxview computer IP addresses
+Update Maxview4D computer IP addresses
+Update LCMS computer IP address
+ROS computer updated IP addresses
+RCMS computer updated IP addresses
+Drive IP addresses need to be updated
+Maxview4D hosts should not use IP addresses
+OPC IP addresses need to be updated due to IP address changes
+Implement IP Camera (RTSP) Protocol
+RTG25 Diesel engine interface IP problem
+P19010 Vancouver QC project - QC6 Cab/Gantry Viewer not working after change the IP address and computer name
+Frigitech didn't set PnPn coupler IP preventing profinet communication with Rx3i PLC
+Profinet IP Address return to original value when connect to PLC
+Fix IP address of Maxview4D computer in host file for 06L
+ENIU targets Produced and Consumed IP updated
+Status Bits to RPLC set to wrong address
+IP address update from the End User. Camera IP addresses will need to change.
+Cable Reel alarms without PLC address
+Fault table "Reference memory address is out of range"
+Maxview IP address changed following power outage
+Blk##.Scm#OffRq has no address
+Crane Plc - Alarms tags needs: address / description / code
+ASC_SnapshotReqxx address must be consecutive
+ASC EGD Variable address not correct
+Crane Plc - Alarms tags needs: address / description
+No IO address
+Reference Memory address out of range fault - GantryZonePos
+Host File Version 8.0 Release - IP address changes
+IP address changes from 172.25.x.x to 10.121.x.x
+Update LCMS computer IP address
+Profibus.cim screen address fix
+Drive Summary screen address fixes for MM
+OPC IP addresses need to be updated due to IP address changes
+EGD address overlap
+CCTV Ip address update for HOST File
+Reference Memory address out of range fault - GantryZonePos
+Reference Memory address out of range fault - GantryZonePos
+Reference Memory address out of range fault - GantryZonePos
+TuneUp parameters address
+TuneUp parameters address
+TuneUp parameters address
+Blk17.PLCHeatbeatFb address
+Controller Fault Table overflowed with Reference memory address is out of range
+reference memory address is out of range
+RIO01~RIO08 EGD ref address defined differntly with PLC IO Address
+RIO01~RIO08 IO address different from  drawing
+ROS/YARD variables address error
+RIO hardware DI/DO module  reference address
+Consumed exchange of RIO Ref address error
+Cimproj spreadsheet to be updated with PLC variable and address for respective alarms
+ROS01.SPR20/40/45FTRQ need assign address
+P19010 Vancouver QC project - QC6 Cab/Gantry Viewer not working after change the IP address and computer name
+Micromotion CCW and CW variable address are wrong
+Assign address for TuneUpParameters for future check
+Duplicate address for ROS10 in RCMS Screen
+Fix IP address of Maxview4D computer in host file for 06L
+Update ETM ip address from 165.156.32.208 to 165.156.11.208
+Specs of LCMS Laptop computer do not match
+AC Control Modifications after testing at site with Frigerotec
+AC control logic changes based on feedback from Frigerotec on site
+FNHEL relay missing in Source cabinet / no drive specific drawings on site
+EnterInstruction Setup at site on ROS computers
+Gdynia site needs configured LCMS computers for first NIT cranes
+Gdynia site needs configured Maxview computers for first NIT cranes
+Gdynia site needs information regarding NIT cranes orientation in the yard and host file
+disabling ROS 13, 14, 15, and 16 in site production version
+Cable Reel Logic Compare between in progress master version 7.0 and site version 6.13
+Compare working master 7_0 to site version 6_13
+Eroom Ambient logic different from site version 1.2
+Missing logic between site releases and Master releases
+LCMS version from site to create next Master release
+Modify SPLC from site backups to match current crane
+Sheet 2CS - site mark-up adjustments.
+ACM motor parameters should be verified on site
+FE on site needs to get help to configure Antisway in QC04
+ABB Switchgear CT polarity wrong , Need ABB Technician to be site
+Update PME installs at site to SIM 23
+New HMI  project aftter modified on site
+BBG site new chassis model supported
+ARC Flash Analysis by MESA - On site data collection and analysis
+Initial site changes 5/5/22
+QP work required on site
+RE: GPA QC Project - Backup software and startup workbook before I leave the site on 26-11-2022
+configuration testing will need to be done on initial setup at site
+Some site changes based on version 7
+TMD E-stop were disabled on BBW site
+Boom.FrRoundTm has different value than site
+P21155 Elementary drawings site update
+Laptop Configuration Sheet
+Specs of LCMS Laptop computer do not match
+Windows licensing on programmer laptop
+Using a TMEIC development license for the LCMS spare laptop
+Zone data transfer from CraneDirector to ASC can get interrupted
+Production data - PLC LCMS communication issue
+Function Test Item Load Cell input card channel diagnostic data enable
+Gotting antena order of data transfer setting
+ClearZone Scanner2 data is for neighboring block
+Production data screen
+Crane_Diag not counting production data
+Maintenance and Production data is for STS not ASC
+PLC unable to get zone data from CraneDirector
+Production data does not work
+RCMS is not showing the data for Power History report
+Cranes 25-28L has more completion unkown in Power BI tool and some data is not getting captured in CMS
+Convert auto Land captured data to Millimeters
+DGR unresponsive after trying to switch to historical data
+Remote Chair HMI Screens can overwrite crane data without being in Remote mode
+Prod & Maint data is not being collected  in the SQL database - Haifa
+Production and Maintenance Data Utility Screen missing data
+correct motor data on LS and WS ASC drawings
+205-Power screen no data
+206-Operator ID/performance screen, can't find data source
+RCMS data (KWH, Gantry / Trolley running time, ROS connection time, etc.) to retentive memory improvement
+Mv4D CG data needs to be initialized
+Pass the data to Rplc for the ROS camera connect.
+Read the data from the crane Plc for the ROS camera connect.
+Operator messages INI version 4.0 was missing data
+Update Micromotion inverter data sheets
+Maxview4d Scanner Calibration_ Collection data
+Maxview4d Scanner Calibration_ Collection data
+Unify zone data for blocks 703A and 703B
+Micromotion System data
+CMS need display GIMD data
+DPWC requested direct data from PLC to VMT by serial cable.
+702L Destination data failed checks
+CableReelTorqTable and system data update
+Auto Drop off model data and 4d collected truck data not matching
+LCMS not updating data from PLC, no new data in LCMS and CabViewer
+Transfer ZOne data to PLC always be interrupt
+Missing Alarm data for LCMS
+Some of live data display with black color when reboot the LCMS computer
+RE: All data with black color on CMS screens after exit and click the shortcut to open the screen
+PQM data can't be displayed in CMS screens
+LCMS sql server database clear '_log' table data
+Maxview IGV target from 4D not include Trim_List_Skew data
+ARC Flash Analysis by MESA - On site data collection and analysis
+SysTableData.xlsx should have Maintenance data added
+PQM data logger causing an error(?)
+missing logic for  4D data collection
+LSA DO solution is always skewed when compared to the model data
+CraneDirector haven't write data to database
+ASC01L HMI logging alarm and data error
+EnterInstruction does not include data for Wkins_Get_ChsProf or Wkins_Put_ChsProf
+LCMS add Power data record
+LCMS add Power data record (P20847)
+Reduced gantry speed only required when collecting data
+ASC Can not get data from Maxview
+Maxview4D CGS EGD size of data error
+CGS has jump data with Self-Driving Chassis on OTR
+Historian trend fail to write data
+LSA Data Logging - PRODUCTION_LOG data errors
+The data from TOS to Profile display function on ROS HMI
+Maxview Reporting Scanner Clock Drift
+BCT LSA Reporting setup
+PQM setup table
+LCMS Not able to start CMS datalogger through setup process
+Variables need to be added for Production Maintenance setup
+CamViewer isn´t setup for Gdynia/Poland
+ASC 41: Database not setup - Alarm history in HMI is not working
+Verify Jib Crane In Position Input is setup correctly
+Temporary ROS desk/Server/YPLC/ROSPLC setup
+RPLC/YPLC redundancy setup
+LSA reporting setup
+configuration testing will need to be done on initial setup at site
+BCT LSA Reporting setup
+Large position error between Trolly.PositionFb and Troll_AbsEncPos
+Changed the name of Flipper 4 Up/Down command and position feedback
+Linear speeds should be set based on Specification. Adjust position feedback using EncTopSpd
+VMR for Trolley/Gantry Target is using the incorrect target position for DropOffs
+Trolley Preferred Path position shift based on Load Weight
+Excessive gantry calibration errors (Puck position table provided by the OEM)
+Correct Ideal minus Target position calculations (diagnostics)
+Gantry Slowdown magnet position capture logic errors
+Gantry position feedback
+Reefer Occupied trolley Passover position not working properly
+Hoist Abs encoder position valid turn off when trolley station power has been recycled
+Slow down magnets position need to be finalized
+Removing the gantry stow position limit switch
+Placing 20s in the WSXfr Zone Target Z position Not valid
+Outservice with no position check
+Crane Director handling of  position on chassis
+Button needs to be added for out of service position bypass request
+P15542 MvSL spreader position shift
+Incorrect WS crane Gantry position when the crane is out of position
+Turn on spreader position regulator in the stack
+Update to Load Dependent trolley position for gantry travel
+Trolley pomux position valid logic needs to be changed
+Trolley pomux position valid logic update
+Reduce Tolerance for Slowdown magnet position check
+Container drop off on 20feet chassis irrespective of Truck position to be dropped in LSA
+crane motion position feedback clarification
+Twist light flash when not in position
+Gantry position AbsEncCalibPos update
+Zone position may wrong
+40ft Drop off on AGV scanning Y position feedback calcurate
+Gantry AbsEncode position invalid when the Flag system Scanned Grass
+Landside transfer zone limit switch position check
+LSA 20FT Middle position DO Failed
+Target out of position is not triggered during PU
+RE: ARCK sensor mounting position
+RE: Synchronize position control of TLS system
+Gantry stow pins not working for center stow position
+VMR for Trolley/Gantry Target is using the incorrect target position for DropOffs (Haifa edition)
+Typo in flipper position indication sent to ROS
+Logic setting trolley limit to cantilever waiting position is creating problems when ASC is in search states
+ROS punch list-Flipper position on the HMI does not match the actual flipper position
+Trolley slowdown magnet switches position adjust
+Hoist encoder position invalid
+Spreader position and stack profile incorrect on Crane.cim
+Update logic about gantry waiting position before cross reefer
+To position or lift plan containers (first level), use of bypass must not be used
+Gantry Flag position correction
+Gantry position calibration code adjustment.
+Reduce trolley speed if position is invalid
+Update truck lane position for trolley in zone table
+Trolly at IGV and Truck Lane different position
+Trolley position limit for NS sillbeam need modify
+When two truck near to ideal position and not in ideal position CGS Does not give solution
+Trolly position limit
+ASC02L Trolly can not go to the stow position
+Auto Drop off and Pickup solution is Off in position more than 150mm
+Update Trolley wait position to avid moving fwd and bwd when cgs jumping
+Add Farside Gantry stowpin in position LS
+gantry on anchor position indication
+Spreader is losing position very often
+block C Job position update
+Add code to record BTG position calibration error
+ITV position and Truck ID feedback interface
+Stowpin position tolerance and logic modification
+Gantry position and Load display  to Radio Pendant change
+RE: H/T/B absolute encoder and motor encoder position validate procedure
+Landside&Waterside Crane position was direction is reversed
+Decrease the micro motion position limitation from 200mm to 190mm
+M8 single laser beam angle or position offset
+Special position limit need to modified and improved in hatchcover mode
+Updated logic for trolley waiting position at cantilever
+Updated logic for starting LSA scan during drop off if the truck is in position
+HMI position limits only go from -50 to +60. Needs to go from -60 to +70
+During DO LSA system is sending 2 different gantry position as the solution (difference is more than 200mm)
+LSA solution for drop off is more than 200mm off from ideal gantry position
+Crane LSA In position and Minor Changes
+Not getting a 4D solution / completed until gantry reaches offset position
+Modify VMR_Gan_Trg and VMR_Trol_Trg target position
+Add Fence1 hoist and trolley position  protection
+Modify VMR_Gan_Trg and VMR_Trol_Trg target position (P20847)
+Add Fence1 hoist and trolley position protection (P20847)
+X position for LSA DO in rear and front 20ft containers are not matching
+Allow ROS operator to set gantry position valid bit when there is a position difference fault
+RIO_08 EGD configuration and Cantilever target job position modification
+Twin 20 shows spreader position at 20 " and must show 40 '
+RE: Fail to write the position into the Hubner Absolute Encoder from the PLC
+4D solutions consistently giving gantry estimated position off by 50 mm
+LSA skew position in range limit is set to 0.5 in PLC
+Antisawy function disable the parking position
+Hoist_LandedSd1 won't update reset position on next landed transitition
+TLS EoT warnings due to home position out of range
+Separated PT chassis scan start and end position for PU and DO
+PU gantry moves to target location and stops instead of going to offset position
+landing position is not reachable without risk of collision, dropoff will be aborted!
+Gantry not moving to LSA target position
+DO 20 foot Rear not returning from offset position
+Drop off to 20 Middle position - Solution invalid
+Low installing position of PT scanner may introduce error into container filter of 4D
+Gantry at MxVw4D_GanAtOffPos should use clamped position ref
+avoid the alarm screen cover the crane position information
+Gantry Center stow position slowdown function update
+Move gantry to LSA start scan position
+ROS_MAIN move crane item position
+If pick up position updated from cantilever to another cantilever area, ASC will not apply new TP
+After LSA pickup Gantry running at 20% speed instead of 2% when controlled from ROS Desk at 6 meter or lower height
+Maxview 20 Target(Scanner-3) Jumping- During LSA Pick up
+Driver off the MAT for LSA 10sec for 40 feet when 20feet instruction completed and got instruction for 40 feet and no truck or truck just arrived
+LSA DROP Failure Due to PLC not able to regulate big Skew and TRIM
+Changes to LSA Drop Sequence when wind is more than 7m/s (Empty Containers)
+LSA DROP Front 20 Drop off on top of rear 20 container- Even Crane(06L)
+Delay Start of LSA Job
+LSA Drop Off - Flatbed Dump Trailer Chassis Failure
+LSA Auto DO_Twist lock getting broken
+LSA Rear 20 Pick up failure- When both front and Rear Loaded
+LSA Pick failure- Spreader Landed wrongly- 12L Crane
+LSA Drop off Container hitting the side wall and still hoisting down
+Commissioning / Calibration Procedures for Pole Scanner Based LSA Systems
+Pole Scanner Based LSA Troubleshooting Guidelines
+LSA Drop off in Cosco internal Truck
+LSA performance report
+LSA Operator Adjust Tag Incorrectly Triggered
+Sequence State 52 time out fault during LSA drop off operation
+LSA Overview / health information should be displayed on ROS
+Some Instructions are not logged in the LSA reporting tool.
+In Case of 4D Scanner Failure or PT failure- LSA Drop off to be made Manual and Stop at 6meter
+CMS Message when LSA is aborted for Front 20 drop off when rear is loaded
+CMS Message update for LSA Failure to be updated From Auto failure after 6 to LSA Failure .
+Container drop off on 20feet chassis irrespective of Truck position to be dropped in LSA
+Excentric load detected should drop crane out of LSA auto
+Sequence State 23 time out fault during LSA drop off operation
+Host file update with LSA
+LSA 20FT Middle position DO Failed
+Increase sensitivity to gantry (re)calibration errors during LSA
+Specifications for operating LSA in windy conditions are need
+16786 LSA improvement Old blocks V31.00 - Hoist Slow Speed
+LSA Drop off 20ft no solution
+LSA trigger timing update
+enable CGS in truck lane for LSA
+No LSA Auto Drop off solution for this specific block( 702C)
+Drop off 20ft chassis LSA no solution
+Pick up from 20ft chassis LSA no solution
+LSA front 20ft DO solution is not good when rear is loaded
+LSA_PUSolutionValid and LSA_DOSolutionValid bits are on for LSA PU
+Increased the PT scan speed to decrease to LSA time
+Update logic for enabling ROS to connect during LSA pick up and drop off
+LSA doesn't work when CGS reports fault
+Updated logic for starting LSA scan during drop off if the truck is in position
+When operating in same bay crane is not pushing other crane after valid LSA solution
+MaxviewRT ini file addition to support LSA
+Loosing spreader target when dropping the container on the chassis during LSA
+During DO LSA system is sending 2 different gantry position as the solution (difference is more than 200mm)
+LSA solution for drop off is more than 200mm off from ideal gantry position
+Local Override files not changing the LSA solution
+LSA is giving 2 different positions for 20ft container drop off
+Update Gantry Fwd and Rev permissive logic for LSA
+Install SQL ODBC driver in Maxview 4d PC  for logging the LSA results in the report server dB
+Move trolley to cantilever when LSA starts scanning the chassis
+Incorrect numbers are being logged into the LSA pick up and drop off tables in the dB
+Gantry tolerance in cantilever area during LSA job
+AutoParams and SystemParameters about LSA
+SerSeqState28_36 for LSA
+LSA logic modification
+LSA logic update to support UTR instruction
+Spreader measurement in y-axis jumps during LSA DO of 40ft container on chassis
+Crane LSA In position and Minor Changes
+Disable LSA in Special operating bays as per SIPG request
+Prevent gantry movement when trolley in cantilever area during LSA
+Enable Push function for LSA PU and DO as per SIPG request
+Stopping CGS measurement before LSA job start request
+When trucks are close to the target truck LSA doesn't generate solution
+Model shifts (Y direction) observed in LSA DO causing the container landing on the rear guides
+LSA Alarm Point Update
+Night Mode LS Auto Landing Fault after LSA PU code installed
+Gantry LSA Pickup Offset Issue
+Failure in LSA PU 20FT box in a chassis with 2 x 20FT boxes
+Failure LSA PU 20FT box from 20FT standard chassis - no solution
+LSA Gantry Limits Update
+LSA logic modification (P20847)
+During LSA fault move trolley to cantilever and hoist to check height
+Disable trolley VMR and use Auto_TrolTrg  to move the trolley to Trg X solution for LSA
+Added logic to check if the LSA X solution is greater than the sill beam protection X postion
+Prevent LSA abort request when there is LSA solution and crane is toggle back to auto
+LSA DO solution is always skewed when compared to the model data
+X position for LSA DO in rear and front 20ft containers are not matching
+Optimised the PLC code for LSA
+Added new alarms to track the LSA faults with respect to the instruction number
+Delta between LSA scan position[Gantry position] and Target Y position[Final solution] is more than 0.3m
+Sometimes LSA detects 40ft container as 2 20ft containers and 2 20ft containers as 40ft containers
+LSA PU- couldn't detect the chassis, container bottoms
+Reset LSA faults when the scan starts
+LSA PU solution is not good when the truck is parked far away in X direction
+Update the Max Delta X and Delta Y tolerance during LSA DO
+LSA PU takes more than 60sec to provide solution
+Add auto land fault alarm for LSA jobs
+LSA PU- Auto landing fault when pickup a container with twin load
+Added LSA skew in range in LSA_SystemErr_Af fault logic
+LSA skew position in range limit is set to 0.5 in PLC
+LSA- Heavy rain caused the LSA X  solution to shift near crane side
+Prevent auto flipper up for LSA PU when there is a single 20ft container on chassis
+Initial V19 LSA Release
+Gantry_RevPm issue in LSA sequence
+No Gantry_FwdPm when LSA enabled and Gantry is in stack
+VMR Disabled for LSA
+Gantry not moving to LSA target position
+VMR_Gan_Delta not turning on for LSA
+LSA Trim Regulate Change
+LSA Pause Enable Change
+LSA DO Button State Change
+Hoist Down Perm - LSA System Error Bug
+LSA to State 56 Fix
+LSA to State 62 Fix
+LSA Gantry Offset Return on Solution Fail
+Rear Container LSA Shift Logic - Not used for HPH
+LSA reporting setup
+State 42 (HOIST slow for initial LSA Pickup) bypassed
+LSA Gantry Return on Fail
+Trolley in LSA Auto Pos Fix
+LSA Signal Updates
+LSA Pause Enable Fix
+LSA Landing Attempts not limited to 1
+Increase Gantry_Trg_Tol for LSA PU DO
+LSA Eccentric load detection
+Increase Skew Lead Lag Regulator gains for LSA
+Customer Request LSA Button Press Changes
+KLSA_MaxSkewLim not used for LSA DO
+Enhancements for LSA Landing Performance
+Reduce for LSA Check Height for LSA
+Limit hoist speed on LSA Pick Up
+Reduce for LSA Check Height for LSA
+VMR_Gan_YInDb dropping out during LSA
+Disable Maxview4d Comm loss faults when LSA is not enabled
+LSA Additional Operator messages
+Crane requests ROS operator during LSA moves
+Disable LSA when Learn Mode is active
+Use State 55 to lower slow for LSA DO
+Yard PLC update for new LSA IO
+Disable Driver push button faults when not in LSA mode
+BCT LSA Reporting setup
+Customer request to add feature to generate LSA solution without executing PU DO
+Control Spreader skew pos during manual LSA PU DO
+Move gantry to LSA start scan position
+Enhance LSA Landing accuracy - Corner Delta
+Allow 1 retry during LSA drop off not landed
+Reduce Hoist speed during LSA Drop off
+CrnRqOpr Change - Customer Request to remove ROS from LSA PU sequence
+LSA Data Logging - PRODUCTION_LOG data errors
+HC02 contact on 2CP is marked as spare
+Remove at stow pin inputs - change to spare
+Invalid 4D License file found on spare PC for this project (As per customer)
+Provide LiDAR M8-1-PLUS as spare replacing the existing spare LMS-511-20100
+Using a TMEIC development license for the LCMS spare laptop
+The TMEIC UserConfig application needs to be installed and configured.
+After CIMPLICITY reinstall, TMEIC EGD devcom from PASolutions is no longer available in the CIMPLICITY HMI project.
+Missing Antenna - TMEIC to supply
+Place TMEIC customer support sticker
+Place TMEIC customer support sticker
+Using a TMEIC development license for the LCMS spare laptop
+MAXVIEW4D Crash and MAXVIEW CPU stopping and Crane going to Manual
+Add the time-out interlock protection for wheel turn when going to 16 degrees and 90 degrees
+PU gantry moves to target location and stops instead of going to offset position
+LCMS computer is missing TMDN, Proficy Machine Edition, CMS project, drive files
+Need NIT specific drawings on CMS computer
+Supplied Ros computer fro ROS 15,16 are not configured with software
+LCMS computer does not have dual video output
+Unable to install historian on reimaged LCMS computer
+Update maxview computer IP addresses
+Update Maxview4D computer IP addresses
+Update LCMS computer IP address
+ROS computer updated IP addresses
+RCMS computer updated IP addresses
+Renaming QC15 LCMS computer is required
+Renaming QC16 LCMS computer is required
+ASC Alarms button not working on ROS_Main from ROS computer
+RCMS button does not work on ROS computer (remote viewer)
+Show Yard button does not work on ROS computer (remote viewer)
+Alarms (from PLC) logging time is not synchronized with LCMS computer time
+Crane out of service script not working from ROS computer
+Alarm date always not Synchroized with computer
+Spare ROS computer software installation procedure
+Spare ROS computer Camviewer is not working
+Update TMdN License for replaced LCMS computer
+The H.264 video decoder needs to be installed on each ROS computer
+P19010 Vancouver QC project - QC6 Cab/Gantry Viewer not working after change the IP address and computer name
+Some of live data display with black color when reboot the LCMS computer
+ROS08 computer windows not activate
+Operator cabin HMI screen not working when computer resets
+"The script 'OnNewAlarm' was not run" message pops up everytime when new alarm updates on ROS computer RCMS remote view of alarms
+Enable project startup on computer boot
+Fix IP address of Maxview4D computer in host file for 06L
+Maxview4D computer build checklist missing BIOS settings
+ROS01 computer restart slowly
+Need to update alarm history screen to get time/date from LCMS computer instead of PLC
+Specs of LCMS Laptop computer do not match
+Maxview computer DISK is almost full
+No connection between PQM and LCMS computer
+RCMC screens can't be open success on RCMS computer
+ROS 05 computer cannot connect to Oracle database

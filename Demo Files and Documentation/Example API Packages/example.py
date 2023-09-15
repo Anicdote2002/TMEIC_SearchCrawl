@@ -66,3 +66,23 @@ for word in words:
 filtered_text_2 = " ".join(filtered_word_2)
 
 print(filtered_text_2)
+
+sentences = [
+    "This is the first sentence.",
+    "Here's another sentence.",
+    "And a third one for good measure."
+]
+
+# Initialize an empty list to store the words
+word_list = []
+
+# Iterate through the sentences and split them into words
+for sentence in sentences:
+    # Split the sentence into words by whitespace
+    words = sentence.split()  # Split each sentence (a string) into words
+    
+    # Append the words to the word_list
+    word_list.extend(words)
+
+# Print the resulting word_list
+print(word_list)
