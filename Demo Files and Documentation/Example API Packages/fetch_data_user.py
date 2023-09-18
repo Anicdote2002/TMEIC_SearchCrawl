@@ -15,33 +15,12 @@ import nltk
 import tkinter as tk
 from tkinter import ttk
 import time  
-import filter_keywords
+import fetch_data_functions
 from nltk.corpus import stopwords
 
 pattern = r'\b[a-zA-Z]+\b'
-
-base_url = "https://tools.tmeic.com/mh/rest/bug"
-api_key = "9yvSoV8p575uVbPhPxgX9vIqJDbzatyuwMKlTrFV"
-url = f"{base_url}?id&api_key={api_key}"
-response = requests.get(url)
-json_data = response.json()  # gets .json of bugs from bugzilla
-
-common_words = set(stopwords.words('english'))
-custom_stopwords = ["needs"     , "needs:"      , "Need"    ,"instead"      , "be"      , "nothing" , "something"   , "State"       ,"reporting" ,
-                    "everything", "check"       , "need"    ,"due"          , "ok"      , "OK", "Ok", "full"        , "new"         ,"stops"     ,
-                    "almost"    , "start"       , "lost"    , "moving"      , "reset"   , "restarts", "restart"     , "full"        ,
-                    "changes"   , "If"          , "if"      , "message"     , "end"     , "moves"   , "going"       , "move"        , 
-                    "laptop"    , "invalid"     , "site"    , "required"    , "require" , "working" , "releases"    , "crashes"     ,
-                    "Using"     , "setup"       , "TMEIC"   , "computer"    , "match"   , "Add"     , "add"         , "model"       , 
-                    "parameter" , "Parameter"   , "target"  , "DISK"        , "disk"    , "scan"    , "data"        ,"calculation"  ,
-                    "restart"   , "model"       , "stuck"   , "state"       , "Anti"    , "Control" , "control"     , "lost"        , 
-                    "angle"     , "include"     , "full"    , "direction"   , "file"    , "spare"   , "done"        , "address"     , "Using"]
-                    
-common_words.update(custom_stopwords)
-common_words_list = list(common_words)
-
-pre_common_words_list = filter_keywords.preprocess_filter_words(common_words_list)
-
+json_data = fetch_data_functions.get_json_data()
+common_words_list = fetch_data_functions.generate_common_stopwords()
 
 def search_components():    
     selected_option = option_var.get() # User selected search component 
@@ -58,38 +37,46 @@ def search_components():
     else:
         result_label.config(text="Sorry, Try Again :(\n")
 
+    # Pre process all text to get rid of any punctuation, whitespace"
+    pre_common_words_list = fetch_data_functions.preprocess_filter_words(common_words_list)
+    pre_issue_list = [fetch_data_functions.preprocess_text(sentence) for sentence in issue_list]
     # Get Filtetred Data i.e. relevant Keywords 
-    pre_issue_list = [filter_keywords.preprocess_text(sentence) for sentence in issue_list]
-    filtered_data  = [filter_keywords.remove_words(summary, pre_common_words_list) for summary in pre_issue_list]
-    filter_keywords.keyword_max_counter(filtered_data)
+    filtered_data  = [fetch_data_functions.remove_words(summary, pre_common_words_list) for summary in pre_issue_list]
+    fetch_data_functions.keyword_max_counter(filtered_data)
     
+    # Generate Keyword List and Output list in a txt file
     keywords_set = set()
     for filtered_sum in filtered_data:
         valid_keyword = re.findall(pattern, filtered_sum)
         keywords_set.update(valid_keyword)
-    keywords_list = list(keywords_set)
-
+    keywords_list = list(keywords_set) 
     with open("keyword_list.txt", "w") as keyword_file:
             for item in keywords_list:
                 keyword_file.write(item + "\n")
 
-     # Initialize empty lists for each keyword in the dictionary
-    grouped_data = {}  
+    # Initialize empty dictionary for grouping summaries based on each keyword in the dictionary
+    grouped_summaries = {}  
+    grouped_bug_ids   = {}
     for keyword in keywords_list:
-        grouped_data[keyword] = []
+        grouped_summaries[keyword] = [] # Initialize an Empty list for similar summaries with the keywords as the key in the dictionary i.e. <key>Keyword <value>Summaries List
+        grouped_bug_ids  [keyword] = [] # Initialize an Empty list for similar summaries's bug ids with the keywords as the key in the dictionaryi.e. <key>Keyword <value>Bug IDs List
         for bug in json_data["bugs"]:
-            if (bug ["component"] == selected_option):
+            if (bug ["component"] == selected_option): 
                 if keyword in bug["summary"].split():
-                   grouped_data[keyword].append(bug["summary"])
- 
-                #  with open("grouped_issues_based_on_keywords.txt", "a", encoding="utf-8") as file:
-                #         file.write(bug["summary"] + "\n")
-    for keyword, summary_list in grouped_data.items():
-        print(f"Keyword: {keyword}")
-        print("Associated List:")
-        for summary in summary_list:
-            print(summary)
-        print("\n")
+                   grouped_summaries[keyword].append(bug["summary"]) # Append to list of the summaries under a particular keyword
+                   grouped_bug_ids  [keyword].append(bug["id"])      # Append to list of the bug ids
+
+    with open("grouped_issues_based_on_keywords.txt", "w", encoding="utf-8") as file:
+        pass
+    with open("grouped_issues_based_on_keywords.txt", "a", encoding="utf-8") as file:
+        for (keyword_summary, summary_list), (keyword_bug_id, bug_id_list) in zip(grouped_summaries.items(), grouped_bug_ids.items()):
+            # A complicated way of accessing a number of lists associated to a particular key.
+            file.write(f"Keyword_Summary: {keyword_summary}"+ "\n")
+            file.write(f"Keyword_Bug_ID : {keyword_bug_id }"+ "\n")
+            file.write("Associated Summaries:"+ "\n")
+            for bug_id, summary in zip(bug_id_list, summary_list):
+                file.write(f"Summary:- {summary} | Bug ID:- {bug_id}" + "\n")
+            file.write("\n")
         
     with open("component_fetch.txt", "w") as file1:
         for item in issue_list:
