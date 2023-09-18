@@ -17,7 +17,15 @@ from nltk.corpus import stopwords
 
 
 common_words = set(stopwords.words('english'))
-custom_stopwords = ["needs", "needs:", "Need" ,"instead", "be", "nothing", "something", "everything","check","need","due"]
+custom_stopwords = ["needs", "needs:", "Need" ,"instead", "be", "nothing", "something", 
+                    "everything","check","need","due" , "ok", "OK", "Ok", "full", "new", 
+                    "almost", "start", "lost", "moving", "reset", "restarts", "restart", 
+                    "changes", "If", "if", "message", "end", "moves", "going", "move", 
+                    "laptop", "invalid", "site", "required", "require", "working", "releases"
+                    "Using", "setup", "TMEIC", "computer", "match", "Add", "add", "model", "crashes",
+                    "parameter", "Parameter", "target", "DISK", "disk", "scan", "data","calculation",
+                    "restart", "model", "stuck", "state", "Anti", "Control", "control", "lost"]
+common_words.update(custom_stopwords)
 common_words.update(custom_stopwords)
 common_words_list = list(common_words)
 

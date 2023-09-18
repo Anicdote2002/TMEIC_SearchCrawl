@@ -27,12 +27,21 @@ response = requests.get(url)
 json_data = response.json()  # gets .json of bugs from bugzilla
 
 common_words = set(stopwords.words('english'))
-custom_stopwords = ["needs", "needs:", "Need" ,"instead", "be", "nothing", "something", 
-                    "everything","check","need","due" , "ok", "OK", "Ok", "full", "new", 
-                    "almost", "start", "lost", "moving", "reset", "restarts", "restart", 
-                    "changes", "If", "if", "message", "end", ]
+custom_stopwords = ["needs"     , "needs:"      , "Need"    ,"instead"      , "be"      , "nothing" , "something"   , "State"       ,"reporting" ,
+                    "everything", "check"       , "need"    ,"due"          , "ok"      , "OK", "Ok", "full"        , "new"         ,"stops"     ,
+                    "almost"    , "start"       , "lost"    , "moving"      , "reset"   , "restarts", "restart"     , "full"        ,
+                    "changes"   , "If"          , "if"      , "message"     , "end"     , "moves"   , "going"       , "move"        , 
+                    "laptop"    , "invalid"     , "site"    , "required"    , "require" , "working" , "releases"    , "crashes"     ,
+                    "Using"     , "setup"       , "TMEIC"   , "computer"    , "match"   , "Add"     , "add"         , "model"       , 
+                    "parameter" , "Parameter"   , "target"  , "DISK"        , "disk"    , "scan"    , "data"        ,"calculation"  ,
+                    "restart"   , "model"       , "stuck"   , "state"       , "Anti"    , "Control" , "control"     , "lost"        , 
+                    "angle"     , "include"     , "full"    , "direction"   , "file"    , "spare"   , "done"        , "address"     , "Using"]
+                    
 common_words.update(custom_stopwords)
 common_words_list = list(common_words)
+
+pre_common_words_list = filter_keywords.preprocess_filter_words(common_words_list)
+
 
 def search_components():    
     selected_option = option_var.get() # User selected search component 
@@ -50,7 +59,8 @@ def search_components():
         result_label.config(text="Sorry, Try Again :(\n")
 
     # Get Filtetred Data i.e. relevant Keywords 
-    filtered_data = [filter_keywords.remove_words(summary, common_words_list) for summary in issue_list]
+    pre_issue_list = [filter_keywords.preprocess_text(sentence) for sentence in issue_list]
+    filtered_data  = [filter_keywords.remove_words(summary, pre_common_words_list) for summary in pre_issue_list]
     filter_keywords.keyword_max_counter(filtered_data)
     
     keywords_set = set()
@@ -68,8 +78,9 @@ def search_components():
     for keyword in keywords_list:
         grouped_data[keyword] = []
         for bug in json_data["bugs"]:
-            if keyword in bug["summary"].split():
-                 grouped_data[keyword].append(bug["summary"])
+            if (bug ["component"] == selected_option):
+                if keyword in bug["summary"].split():
+                   grouped_data[keyword].append(bug["summary"])
  
                 #  with open("grouped_issues_based_on_keywords.txt", "a", encoding="utf-8") as file:
                 #         file.write(bug["summary"] + "\n")
@@ -78,8 +89,8 @@ def search_components():
         print("Associated List:")
         for summary in summary_list:
             print(summary)
-            print("\n")
-
+        print("\n")
+        
     with open("component_fetch.txt", "w") as file1:
         for item in issue_list:
             file1.write(item + "\n")

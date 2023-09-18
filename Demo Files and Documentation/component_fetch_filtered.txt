@@ -1,12 +1,9 @@
-P19687 BeiBu Gulf Maxview Startup
-toolkit maxview laser alignment
-MAXVIEW IGV model
-MAXVIEW scan IGV TRUCK trolley direction
-Maxview Skew Rotate angle CW/CCW reversed
-Maxview Anti-collision calculation Control trigger maxview
-Maxview IGV target 4D include Trim_List_Skew data
-Maxview.ini Parameter Type D CPUs
-LMS Scanner stuck Busy State
-MaxviewRT crashes restart
-Maxview computer DISK full
-Maxview ACL heartbeat lost
+Fix IP Maxview4D host 06L
+PU gantry location offset position
+EnterInstruction Wkins_Get_ChsProf Wkins_Put_ChsProf
+LSA setup
+Add RPTMAXVIEW4D host file
+Specs LCMS Laptop match
+Using development license LCMS laptop
+configuration testing initial site
+BCT LSA Reporting setup

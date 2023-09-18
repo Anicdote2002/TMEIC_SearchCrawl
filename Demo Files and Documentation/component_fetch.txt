@@ -1,12 +1,9 @@
-P19687 BeiBu Gulf Maxview Startup
-toolkit for maxview laser alignment
-MAXVIEW IGV model
-MAXVIEW scan the IGV and TRUCK from trolley moving direction
-Maxview Skew and Rotate angle CW/CCW reversed
-Maxview Anti-collision calculation and Control on trigger not ok in new maxview
-Maxview IGV target from 4D not include Trim_List_Skew data
-Maxview.ini Parameter changes for Type D CPUs
-LMS Scanner stuck in Busy State
-MaxviewRT crashes after restart
-Maxview computer DISK is almost full
-Maxview and ACL heartbeat lost
+Fix IP address of Maxview4D computer in host file for 06L
+PU gantry moves to target location and stops instead of going to offset position
+EnterInstruction does not include data for Wkins_Get_ChsProf or Wkins_Put_ChsProf
+LSA reporting setup
+Add RPTMAXVIEW4D to host file
+Specs of LCMS Laptop computer do not match
+Using a TMEIC development license for the LCMS spare laptop
+configuration testing will need to be done on initial setup at site
+BCT LSA Reporting setup
