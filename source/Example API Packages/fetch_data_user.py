@@ -85,6 +85,29 @@ def search_components():
     with open("component_fetch_filtered.txt", "w") as file2:
         for item in filtered_data:
             file2.write(item + "\n")
+    
+
+def display_grouped_data():
+    root = tk.Tk()
+    root.title("Text File Viewer")
+
+    # Create a Text widget to display the file contents
+    text_widget = tk.Text(root, wrap="none")  # wrap="none" to disable text wrapping
+    text_widget.pack(fill="both", expand=True)  # fill the entire window
+
+    # Open and read the text file
+    file_path = ".\source\grouped_issues_based_on_keywords.txt"  # Replace with the path to your text file
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            file_contents = file.read()
+            text_widget.insert("1.0", file_contents)  # Insert the file contents into the Text widget
+    except FileNotFoundError:
+        text_widget.insert("1.0", "File not found.")
+
+    # Start the Tkinter main loop
+    root.mainloop()
+
+
 
 # Make the Window for the User Input 
 GUI_window = tk.Tk()
@@ -102,6 +125,9 @@ option_dropdown.pack()
 # Create a button to perform the search
 search_button = ttk.Button(GUI_window, text="Search", command = search_components)
 search_button.pack()
+
+display_button = ttk.Button(GUI_window, text="Output", command = display_grouped_data)
+display_button.pack()
 
 result_label = ttk.Label(GUI_window, text="")
 result_label.pack()

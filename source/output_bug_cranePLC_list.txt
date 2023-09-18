@@ -1,0 +1,1413 @@
+MV Shunt trip output logic update
+Contact change for transformer temperature inputs
+Orientation Bit needs to be flipped
+Pendant selector switch logic for gantry and telescope needs to be changed
+Maxview EGD Exchange ID needs to be changed
+AC Control Modifications after testing at site with Frigerotec
+RCV regulation enable bit to drive
+Hoist 1 Speed Ref Enabled logic update
+Pomux scaling needs to be added to factory settings ST block
+Gantry Cable reel encoder as shipped GSD file not communicating with device
+ACM control scheme from pendant needs to be reviewed
+Spreader stop button is not an estop. Need to remove from control on permissive logic.
+EGD produced period need to be set to fixed value for drive communication
+AC control logic changes based on feedback from Frigerotec on site
+Reference for hoist calibration
+Hoist calibration - instead of KHoist_GrndCalibPos use KHoist1_GrndCalibPos and KHoist2_GrndCalibPos
+TrlyIO.CfgErr_Aw set when it should not be.
+Serial Configuration wrong for Banner MiniArray
+Trolley pendant control logic change
+SAFEWAY Speed Window Limit does nothing currently
+Large position error between Trolly.PositionFb and Troll_AbsEncPos
+Typo in SourceControl Block
+Cable reel motors OT alarms
+Revision of CblRl_Slack_Af
+Bug in Trolly_FldLt_Af logic
+Change of MA_Slack_SP value
+Changed the name of Flipper 4 Up/Down command and position feedback
+Stow pins commands modification
+Linear speeds should be set based on Specification. Adjust position feedback using EncTopSpd
+Problem in HoistxAbsEncPosFb calibration (SAFEWAY)
+Status Bits to RPLC set to wrong address
+EGD updates for YPLC and RPLC
+Bugs found in Air conditioning control code during Sep visit to Poland
+Update Accel/Decel times in System Parameters based on OpNotes
+Large timer value in CblRl_MovementSensor_Aw warning
+Host file Rev 9.0 needs adjustments.
+Add SAFEWAY speed window alarm to PLC code
+Losing Hoist1_AbsEncPosValid / Hoist2_AbsEncPosValid after ASC is turned OFF
+Bug in the Gantry_Bk9Rel_At logic
+Confusion regarding fault Trolly_MainMtrBkCB_Af
+Transformer house Estop does not have ROS_OprMsgNum
+Remove orientation bit from Cable reel manual control (Cable reel Op. station)
+Revision of CblRl_GanInv_Cm logic
+Verify AcmParameters block
+Gantr1.Latency in FactorySettings is set to 0
+Changed settings for max number of wraps on the cable reel
+Modification of End of travel trip logic
+Logic change for Spredr_NotLanded signal
+Addressing mapping error for the Modules Present code
+Problem with TIO fault table
+Variables need to be added for Production Maintenance setup
+Baypass Gantry_MSP_Cm when operating from the cable reel station
+Trolley slowdown check fault
+Variables to add to historian for DGR
+Baypass in System_CtrlOnPm logic
+Modification of Flipper Up command logic
+Modification of Hoist1.BkRelTm
+Unable to reset faults Trolly_FwdSdCkLs_Af and Trolly_RevSdCkLs_Af
+Gantry control from pendant logic change
+Cable Reel alarms without PLC address
+ACM Torque tracking fault code missing
+Logic for Spreader Stop button pressed alarm
+Cable out of basket in hoist up permissive logic
+AC Compressor Run Logic needs to be updated
+Problems with fault Hoist_PosDiff_Af
+Zone data transfer from CraneDirector to ASC can get interrupted
+Cable Reel parameters adjustments
+No code for input 217i in PLC (Lighting contactor CB status)
+Gantry emergency plug connected is changing hoist speed reference instead of gantry
+Control form gantry/trolley pendant station
+Transformer Room door open needs to trip the MV switchgear
+Bypass output for MCCB status to source
+Software for driving the crane at the vessel deck
+No alarm if Cable reel PT is disconnected
+No alarm when we lose headblock connected signal, when in spreader mode
+No trolley motor overtemperature warning
+No slack rope alarm
+Auto_StrRsum Logic update for separate yard and ros PLCs
+ROS_Trend tags clean-up
+Operator Message Update
+Moving one gantry for stow pin placement
+Pendant Bypasses Gantry OT and Thermal Overload
+Pendant Bypasses Hoist Overload
+No Trolley and Gantry when any landed sensors is on
+Only hoist down when twistlock signal feedback is not complete (not all locked or unlocked)
+Trolley and Gantry need to be inhibited when hoist ropes have slack status
+Only Hoist down enabled when spreader connected signal is lost
+When in headblock mode drop hoist run permissive if spreader connected signal is ON
+Hoist Up Permit
+Gantry Pendant for Gantry Motion not working for orientation 1
+Duplicate timer register and boot tmr setting difference
+Trolly_RevSd_At traveling away from E-house.
+Cable Reel Banner array communication fault, MA_CommFail_Af, should drop Gantry RunPm
+Trolley Gate faults automatically reset when operating in local mode
+Transponder table size increased
+Cable Reel Slack MinArray Communication NOT OK
+Trolly IncSlowPos and DecSlowPos updated values
+Gantry Droop Reference Ramp Logic implementation
+Cable Reel Inertia setting in the PLC
+Gantry over travel Bypass Logic not working properly on MotionStopRelay Block
+Enable Swap Word Logic for Gotting antennas on XpondrCheck Block
+Temporary EGD changes for Commissioning network
+ACM LeadLagHold command Logic Error
+Move MtrTopSpd from systemparameters to TuneUpParameters
+AC Unit CMS Requests have not Reset
+KAuto_DnPosLim value changed
+Gantr1.CalibSwOffset setting has changed
+Variable addressing and description Updates for TuneUpParameter variables
+EGD configuration for RPLC and YPLC not correct on all cranes
+AUP file needs to be added to the hardware configuration
+Gantry and Cable reel motor base speeds need to be adjusted
+Gantry cable reel profibus fault not in any permissive logic
+AC Unit Going to WarmUp mode when PLC stops and starts
+Crane allowed to operate while AC UNITS in Warm UP mode
+Hoist and trolley Motion Speed Regulator PLC System Parameters and Tune-up Parameters update
+Hoist Grossload/Maxspeed calculation errors in Auto
+Moved KAuto_InProduction:=#alw_on; to Auto Parameters.
+Cable Reel logic Update
+PLC Overtemp (%SA0008) is not stopping Source Drive
+Cable Reel Run Command applied without gantry run, fwd, rev permissives
+Cable Reel and ACMs allowed to Run without Source running.
+SourceRunning_Pm latched allowing motions while source is stopped.
+Changed variables Properties for OPC trending
+OPC UTC setting changed to ZERO
+Signals and logic added for Cable Reel Trending
+Added Commissiong folder to place startup testing logic
+Hoist Position difference between Absolute and Tach Logic Issue
+No code for analog diag inputs for cable reel motor RTD sensors
+Gantry Motion PLC parameter change, Gantr1.DrvinertiaRf and Gantr1.MotionRatedPwr
+Stack Floor Height logic error
+Correct setting for KAuto_MaxBayNum
+Logic for operator message 32 is always on
+Droop Ramps times Changed
+During Move Only Commands Hoist loses Safe height due to trim
+Hoist Trim Regulator Runs for 10 seconds after hoist 1 brake is set and trim is ZERO
+Cable Reel Emergency Mode will not work
+Cable Reel Estop, MspSt and RunCm sequencing for ACSW_Fs
+Parameters changed for Trolley and Gantry stopping accuracy
+Time Delay added on Cable Reel Estop Torque.
+Trolley Base Speed Parameter corrected
+Added KAuto_LandTolSkw parameter for better stacking performance
+Hoist motor temperature warning
+Trolley alarms don't show in HMI if the spreader 24V power supply turns off
+No warning/alarm for losing the gantry storm pin disengage signal
+No code for cable reel roller pulse signal
+Auto_ACMMinTrqLm missing in Auto Parameter
+Opening THCB (sheet 2A) shunt trips MV switchgear
+Trolley Position List compensation errors
+KAuto_SprHgt Site Parameter change
+VMR for Trolley/Gantry Target is using the incorrect target position for DropOffs
+Parameters KAuto_GanDeltaGn and KAuto_TrolDeltaGn adjusted
+Clamp for ACM Speader Position Reference in X, Y and skew are too large.
+Increments for Acm_SprXposRf during manual micromotions is too small
+Function Test Item Changes to Acm_ManRegSprPos conditions.
+Incorrect hoist Position Reference in state 27 and 52
+KAuto_HstSdDistLk parameter change
+VMR speed limits changed
+ACM Lead Lag Latch changes
+Added Parameter KAuto_ACMMinTrqLmUnlk and logic
+Changes for Auto_SpdRegMd
+Hoist inc slow down speed to match KAuto_HstSlwRf when locked in Auto
+ACM Zero Speed Level and Zero Speed timer values changed
+VMR in Deadband change
+Maxview Memory allowed to clear with obstruction detected.
+Hoist1.InPosTol Parameter Changed
+On Retries the Target VMRs are turning ON
+VMR speed Reference control Changes
+Trolley Preferred Path position shift based on Load Weight
+Function Test Item Change Gantry End of Travel trip
+Function Test Item Change Trolley End of Travel trip
+Function Test Item Gantry motor OverTemp fault timers added
+Function Test Item Twistlock warnings added for pendant operator
+Function Test Item Spreader Not Locked and Spreader Not Unlocked change
+Function Test Item added Headblock lock/unlock warnings
+Function Test Item Hoist Emergency motor 1 and 2 coupled fault separated
+Function Test Item Added Open Wire detection for load cell faults
+Function Test Item Load Cell input card channel diagnostic data enable
+Hoist 1 speed reference is enabled without Hoist 2 Brake command
+VMR Delta Regulators enabled on Lowering.
+Retries due to landing loaded container.
+Excessive gantry calibration errors (Puck position table provided by the OEM)
+Cable reel orientation for NIT ASCs
+Condition for State 55 on retries changed to ACM_LeadLag_Ltch
+Added Gantry 2 Run Zero Speed command
+CMS_IDEnable NOT OK due to ReeferIDTest
+Operator Message 32 is always ON
+ACMs and Dancing Spreader.
+Changed Parameter B_NOM_TRQ value
+Alarm Log filling with Hoist 1 and Hoist 2 slack rope warnings
+Hoist Calibration Timer changed
+Correct Ideal minus Target position calculations (diagnostics)
+PLC does not automatically read Zone Data after PLC startup or CraneDirector Restarted.
+Water side gantry slowdowns for WS entry permit causing faults.
+Gantry Slowdown magnet position capture logic errors
+Added Enable Bit for trolley inc/dec slowdown positions with speed check
+Modification for Trolley Prefered path load offset
+Spreader Twistlock faults logic need more clarification
+Software bugs fixed after CX Island Commissioning
+CraneDirector  PLC communication problem
+Filter Option Added for Maxview feedback due to a faster update rate
+CMS_Hoist1Load variable is misspelled
+Gotting antena order of data transfer setting
+Gantry position feedback
+Reefer Occupied trolley Passover position not working properly
+Hoist Abs encoder position valid turn off when trolley station power has been recycled
+Crn_RPLC1 EGD page Length was set different from the one in RPLC
+Transformer power keeps tripping after PLC restart
+Hoist Absolute encoder Calibration
+SAFEWAY trips at ASC Estop
+Change the hoist down limit when the super user, or pendant user  is active
+Removing the gantry stow position limit switch
+Error in resetting System_AirCond1_OvrPres_Af
+Orientation bit update.
+Crane span is now 29.000 m
+Modified Cable reel inverse command logic
+New gantry control from pendant logic
+Changed factory settings for bit Gantr1.PolarityInv
+Gantry Brake Set time adjusted
+ROS Super User Active is hard coded for only one specific ROS desk
+Reefer floor height is a hard coded delta to add to the stack floor height
+Automation Faults not logging when Auto Abort is enabled
+Placing 20s in the WSXfr Zone Target Z position Not valid
+Crane Stowing but does not hold Zero skew when Control is set to OFF
+Hoist Cable Slack during auto Pick up from truck in Land-side Transfer zone in Crane 21L
+After LSA pickup Gantry running at 20% speed instead of 2% when controlled from ROS Desk at 6 meter or lower height
+System_AirCond1_LoPres_Aw and System_AirCond2_LoPres_Aw are using incorrect variables.
+Change in Gantry over travel logic
+Produced EGD page to YPLC expanded to 200 words and 200 bits
+Main Transformer Shunt trip causes are not sent and logged in the Yard PLC
+Variable Initial values changed
+Added Warnings for Spreader Unlock Bypass variables.
+Cable Reel Emergency Mode not stays Enabled after turning ON both motor starters.
+Hardware %R memory expanded to 8400
+Safeway trips due to hoist Quick Stop
+Cable Reel Control Station Fault Indicator light is confusing
+Safeway trips when hoisting manually with rated load
+MoveData_Check coil not energized when not using N4
+KAuto_LandTolSkw and KAuto_LandTol values Changes
+Changed value for KMaxVw_ROI_SizeVeh for Target Z pos validation for LS drop offs
+ASC move Out WS, Auto_ManClaimWS sequence issue.
+Spreader not Landing as per the Trim Generated by Maxview 4D and fails to pick container with higher Trim during Auto Pickup
+Landside stack yellow light
+Operator Message 167 is set using estop faults and not overspeed faults.
+Gantry Droop reference scaled by speed reference.
+Gantry Run Zero speed command is need when operating from the pendant.
+Logic re-order for Gantry Natural Skew testing
+Walking maintenace gate interlock
+Wrong Trolley Lane number at LS
+Changed ACM1.FluxDkTm to reduce nuisance alarms
+Missing Yard1_Reef13_RqBits_2 variable
+Source Drive Var control , PQA loss voltage feedback
+HVAC system logic change
+Frigortec unit Low Pressure warning
+AC Unit parameters moved from TuneUpParameters to SiteParameters
+ASC canont get Reefer request bits from YPLC
+Updates from ZPMC
+RMG55 ACM3 Rope broken on June 22nd
+Landside Reefers don't have the gantry reefer magnets
+Spreader no Mode hoist still able to run
+Auto_InsCan_Af is not counting if instructions are canceled
+Load Cell Hoist Overload Alarm Detection
+TLS Auto Mode no working
+Source RCV control PLC Code
+"Fault Reset" Indication Logic
+Hoist trim angle set point should be zero for landside targets that are cassets
+Hoist speed tracking trips after estop while hoist was in motion
+Stow pins Keep running after local commands are removed
+Disable Trolly_PosLimitError_Af and Gantry_PosLimitErr_Af
+Machine House Boom Up/Dn operation
+Anti-Collision does not work when other crane is out of service
+CblRl_EmergMode signal missed in cable reel logic changes
+Tripping Ground Fault (AC unit tripping)
+ASC occasionally stuck in State 2
+Rename Trolly_MainMtrBkCB_Af fault and update alarm messages
+Protection Logic when Trolley Filter CB trips to protect AC from high noise.
+NIT Site PLC Version V1.1
+Pomux Direction incorrect
+Turn on spreader position regulator in the stack
+Disable Trolly_PosLimitError_Af and Gantry_PosLimitErr_Af Final Solution
+Transponder IDs incorrect
+Hoist down limit will not allow spreader to land on ground
+Initial value changes
+Hoist motor top speed adjustment
+Cable Reel Logic Compare between in progress master version 7.0 and site version 6.13
+Compare working master 7_0 to site version 6_13
+MASTER VERSION 7.0 RELEASE
+MASTER VERSION 2.0 RELEASE
+Update to Load Dependent trolley position for gantry travel
+AC Logic changes added to Op Notes
+Trending report following 300 m/min trial operations
+RE: Trolley anti-sway issues
+Invalidate instructions to reefer area if the reefer is occupied
+Added diagnostics to capture Maximum speed of ACM.
+State logic stuck in state to with local move out requests.
+Crane Span modified for for NIT
+Broke out Y direction landing tolerance for more flexibility due to slope
+Cable Reel Parameter changes
+Changed gantry zero speed level and timer values
+Changed PLC value for Cable Reel KW.
+Added Gantry puck table error in millimeters
+Gantry Brake set time moved back to System Parameters
+Change for BKTmChk function block
+Trim Correction logic incorrect polarity.
+Trim control set points logic to allow hoist calibration to be trim zero.
+Added KGantry_EmerPlugSpdLmt Site parameter
+ASC operation modified for landside reefers gates
+X positive and negative obstruction limit logic for operation in lanes 1 and 9
+Change Addresses for variables not intended to be in YPCL produced exchange
+KAuto_ReefinStk moved to TuneUpParameters
+Issues with Cable Tension in Emergency Mode.
+ROS12 cannot be connected to cranes
+Cable Reel torque reference adjustment
+Reefer gate open permissive logic change
+ROS Maintenance queue is not working
+ACM Spreader Positioning Ref inc/dec value is incorrect
+Cable Reel torque ref block differences
+Eroom Ambient logic different from site version 1.2
+SeqInupt logic block differences
+Error in Trolley clear preferred path calculation
+Site version 2.01 variable changes
+Site Release v2.01
+Changed Site Parameter KGantry_WSBay206SlwDnPos
+Spreader shifting due to spreader trim angle
+ASC Machine is getting Cable Reel Slack Trips when entering the buffer zone.
+Blk27 ASC's not moving outside of reefer zone
+Gantry magnet Switch positions
+AutoCancel instruction counter is not working
+Different gantry, and trolley in Zone tolerance is needed for Superuser, and maintenance users
+Spreader landside trim setpoint changed due to slope change
+Error 12235 RMS of EGD not allowed
+Cable reel torque reference for estop condition needs adjustment
+Cable reel torque reference for estop condition needs adjustment NIT
+Missing logic between site releases and Master releases
+Water side crane 56 did not stop before end bumper during water side transfer zone operation
+Crane plc code adjustments to support the RCMS brake test screen
+List of all E-Stops for ASC Crane (prioritize based on history)
+Identify E-Stop contributors from fault log [RMG 48]
+PLC update for RCMS Rail Monitor screen changes
+PLC update for RCMS Brake test screen changes
+PLC update for RCMS brake test screen changes for VIG
+Changes to ASC PLC project for waterside slowdown magnet logic
+Crane Plc - E-Stop and Motions Stop mapping documentation
+Calibration Stats Color animation is not working.
+Trolley pomux position valid logic needs to be changed
+Trolley pomux position valid logic update
+AC logic updates from VIG to NIT Master PLC version
+Test Bug PLC
+HMI Point Update for Blk30 Maint Gate Signals
+Crane Plc backup needed for the LCMS HMI project release 4.0
+Gantry Brake Test from RCMS screen Logic update
+Cable reel torque to spike in slow speed mode
+Spredr_AllFlipDn_Af trigger after pick up finished from Landside
+unnecessary alarm " Acoll_NormStp_Af" when the crane is out of service
+Maintenance and Production data is for STS not ASC
+During Auto Stow Pin engage sequence ASC will not turn Control OFF
+Change Hard coded ROS desk SuperUser logic
+Change in calculation for Auto_Nr_Ls_Area
+Proactive changes for the Gantry_XfrSd_At's at VIG
+Normal ROS operator cannot cancel instructions.
+Obstruction logic update after obstruction limit changed to 220mm
+Gantry_NxToReefer logic hard coded to bay 47 and 48
+Gantry_TrgReefer has two coils with the same logic
+Auto_NotAtTrg_Ao message when in pendant control
+Spreader Cable out of basket and Hoist ExtFastStop issue
+With a hoist quick stop there are PLC Hoist speed tracking faults.
+Ok-3 Relay fault logic improvement.
+No Warning for Alarm Log when Overload bypass is active.
+LCMS Data Init block had an #Alw_off NOCON
+Added Test logic and variables to test Cimplicity update time
+Added Project Bits for NIT and VIG for use in logic or HMI
+Eroom temperature analogue input out of range fault
+ROS_TrgLaneNum logic corrected for NIT lanes swap in the stack
+Master to Production Compare for V02.07 Reconciliation
+Missing plc addresses for the LCMS permissive screen
+Gantry_XfrSd_At on exit when there is a loss of Auto_AtoExeIns
+Crane Plc - Alarms tags needs: address / description / code
+Dynamic Brake Test for Gantry
+Change gantry estops to normal stops
+PLC unable to get zone data from CraneDirector
+Need to adjust sequence timout fault time for states 27 and 52
+UPSCB Trip Alarm Missing
+Add automation tags to the historian.
+Gantry Dynamic brake test Logic update
+Alarm differences between 2 cranes
+Driver off the MAT for LSA 10sec for 40 feet when 20feet instruction completed and got instruction for 40 feet and no truck or truck just arrived
+MAXVIEW4D related error in LCMS and RCMS for troubleshooting
+Add Gantry Torque Proving fault to Run Perm
+Change Production Data Variable Type to DINT
+Addition variables added to historian
+Trolley flood light relay is not a Disable Relay
+Variables need to be addressed for the RCMS ACM Balance screen.
+Dynamic brake test logic disables speed reference for manual brake test
+PLC Pan Tilt Scan Sequence Causing Duplicate Scans
+Source RCV compensation faults descriptions changed
+Trolley Inertia calculated by Hoist drive GrossLoadSaved NOT load cells
+Puck status bits in ROS_Trend_Puck_Stat# change for  CMS_Gantry#CalibStat#
+Gantry Skew Error Table name and length error
+Cable Reel Run Perm rung not all variables have descriptions
+Timer in Cable Reel Run Perm Rung causes issue with HMI perm screen
+Added logic for commissioning calibration gantry offset calculation
+Added More spreader obstruction signals to the historian
+Created Gantry Alarm messages to record gantry speed and positions of estops
+ACM do not have and LCMS Button Warning indication
+Maintenance gate naming for status from YPLC is confusing
+Added Comments and changed logic for AC ETMs.
+Added KSpredr_WsTrimSP and logic
+Gantry_WSSlwDnChk_Ls and ROS_OprMsgNum are not Logged in Historian
+LSA DROP Failure Due to PLC not able to regulate big Skew and TRIM
+Maint gate stack occupied warning should be split to WS LS
+Costumer report Spreader size duplicated some times
+ACM Test Torque Bypass Alarm
+Change DC4CB input to MAxview power supply
+GWRCB and Gantry_SpHtrCB_Si Rename and add alarm
+Slowdown magnet estop from high speed
+Changes to LSA Drop Sequence when wind is more than 7m/s (Empty Containers)
+Costumer reports T/L and Ext retract bypass can't be the same button
+The Semi Auto Control testing is not giving good results, need support from Salem
+LS crane Max Gantry Position Limit change
+Trolley Manual brake test should only be enabled when ROS_OpStnTrolley is true
+Auto Landing Failures 10 t containers
+Add Individual EStop Alarms
+Add Alarm for Hoist_ACMAuto_Sw
+Add Gantry_SlwDnCkLs_Af to Gantry Estop
+Hoist jumps 20 ft during jogging
+Addition variables added to historian PLc ver 6_28
+Change KGantry_EstpLogSpdLvl to 1.0 to avoid false logging
+Cycle Time Comparison
+Next To Reefer Bay Logic needs to use greater than and less than bay numbers
+Do not inhibit Waterside Slowdown speed check for LS crane
+2Nd Waterside slowdown Position has two constants used.
+Reduce Tolerance for Slowdown magnet position check
+RX3i FSB Controller stop/halt security vulnerability
+Delay Start of LSA Job
+Spreader extension setting Gantry_AtLs
+TLS dificult to Adjust and Overshoot
+LSA Pick failure- Spreader Landed wrongly- 12L Crane
+Maxview Memory allowed to clear with obstruction detected
+Gantry Dynamic brake logic NEGCON change to NTCON
+Gantry Dynamic brake logic NEGCON change to NTCON
+LSA Drop off Container hitting the side wall and still hoisting down
+Vig request to change stow sequence
+LSA Operator Adjust Tag Incorrectly Triggered
+Cable Reel Motor over-temperature trip to use fixed value
+Cable Reel Motor over-temperature trip to use fixed value
+PLC and CMS Messages to be updated correctly for Maxview4D feedbacks
+Sequence State 52 time out fault during LSA drop off operation
+Land side drop off should be manual when PT or Sensor not communicating
+Container Snagged on Front Wall and Damaged Truck
+Changes to Max Position limit
+Hoist Gantry Speed ref clamp change
+New hoist Ground Calibration Logic
+Add calibration messages
+Convert auto Land captured data to Millimeters
+Move KAuto_GantryAutoTrgOffset to TuneupParameters
+Modify KAuto_MaxBayNum logic for Parallel stacks
+Add Powerup time delay to CblRl_WrapNumMismatch_Aw
+Add Separate Point for Trolley Brake test
+Hoist2_PosDiff_Af Logic change
+Add op Msg for Gantry_DynTestRunTime_Af
+Remove Slope offset from Dynamic Torque test fault
+Lane E PT used for Lane D if scanner for lanes C&D failed
+In Case of 4D Scanner Failure or PT failure- LSA Drop off to be made Manual and Stop at 6meter
+Maxview4d Communication Fault Message in CMS during Crane is idle should be updated
+Crane Reefer logic change
+Increase ROS desks to 22
+Increase ROS desks to 20
+Spreader extension setting Gantry_AtLs
+Increase  20' unlock tolerance in WS
+Modified WS Floor Height for Slope
+Obstruction detection logic change for door direction
+Hoist Gantry Speed ref clamp change
+Crane gantried container into wall and cab of truck
+Excentric load detected should drop crane out of LSA auto
+No Auto_MvOutWs when Ws Reefer is occupied
+Reset Dynamic Brake test enable when local selected and not CMS_BrkTestEna
+Don't emitt LSA_MXVW4DSEQUENCEFAULTED_AF every time Maxview4D is in faulted state
+ASC enters the Landside at 20% Speed in Night MODE
+Ground in the Land side area for Auto moves has a slope
+P18275 difference between Air conditioning systems
+dynamic brake test message change
+ACM B_KN_ZL_SLK_LOW Parameter change
+Reset Dynamic Brake test enable when local selected and not CMS_BrkTestEna
+Hoisting down slow to check point in Landside zferzone
+Operator Message Update NIT
+Crane Plc - Alarms tags needs: address / description
+Customer requires updated PLC code for OEM commissioning
+Maint gate Transfer zone permissive to be split between LS and WS
+Mini-array.ProcessScanData move alarms outside Block
+Mini-array.ProcessScanData move alarms outside Block
+unnecessary alarm " Acoll_NormStp_Af" when the crane is out of service
+Increase 20' unlock tolerance in WS
+Spredr_AllFlipDn_Af trigger after pick up finished from Landside
+Customer request to add CRC check logic
+ASC_UMI_ACT Not working correctly
+Multiple cranes faulting with Error 8061: Controller is Halted
+Source drive running permissive to all inverters
+Trolley and Boom encoder selection coil 27Q not assingned
+ASC cannot enter LSTZ because traffic lights are not red
+PLC input not mapping to latest retrofot modification
+EGD Control with new Drive TCP/IP
+PLC For Crane 41- Untested
+Drive Trolley/Boom not able to switch between themselves
+PLC storage tag
+PLC Programming Bugs and errors
+Night Mode - Commissioning PLC Changes
+Hoist2 Torque Mode Command , master and slave hoist drive control
+Crane Plc - Master Rev 1.0 - Released
+Hoist max speed calculation curve based new gear ratio
+Reset of Gantry Max Limit to Normal Mode
+Cannot Cancel Last SC Mode Instruction
+EGD Exchanges for ROS PLC
+Adjusted the code for the Emergency Mode - Gantry Brake Release Alarm.
+Crane MM X Shift & Trolley Pos Regulator Issue
+crane motion position feedback clarification
+According to hardware to modify PLC code
+Micro motion EGD ip modify
+Hoist absolute encoder hardware configuration adjust
+Trolley calibration code modify
+Micro motion ABS gsd file modify
+Micro motion working directions
+Hoist positionfb and spreader height
+Micro motion Abs Encoder Scale Factor adjust
+Add the HV room OVERTEMP signal
+Customer change:modification to Gantry Estop Alarm logging
+Floodlight command logic from yplc needs to be updated
+LS crane is not requesting MROS operator, when WS crane has instruction in stack 94 or higher
+Hardware and EGD updates
+YPLC Interface Update
+Night Mode: ASC02/08 LS Loss of Control Power
+Night Mode: Gantry Max Limit
+PLC Initial SW Release
+Crane motor nameplate parameter
+Crane Plc - Master Rev 2.0 - Released
+Hoist brake working time adjust
+Hoist_LoadTbl change
+Micro motion running control
+Reference Memory address out of range fault - GantryZonePos
+trolley inertia
+Hoist and trolley motor heater control
+Hoist motor temperature sent to drive
+IP address changes from 172.25.x.x to 10.121.x.x
+spreader telescope
+Requisition Punch List- Traffic Light Interface
+Requisition Punch List- Truck Lift Detection Interface
+Requisition Punch List- Vibration Monitor Interface
+Requisition Punch List- Insulation Monitor Interface
+Requisition Punch List- Chassis Guidance Sequencing update
+Requisition Punch List- Optimized Path in same gantry bay
+Requisition Punch List- Auto Landing on Bomb Carts
+Fix YPLC-ASC EGD GP11 Mapping
+Modify Hoist MaxPosition Limit for LS
+Add enable Parameter for Auto_TrgUTR
+Increase Array size for ZoneTable - Out Of range Faults
+Implementation of semi-auto foot switch
+Hoist_AbsEncComm_Am and Trolly_AbsEnc_IOComm_Am should be faults (_Af)
+RX3i redundant PLC CPU Halted fault
+Modification to Gantry_DynTestRunTime_Af
+Hoist Max Position limit modification
+Blk19 Gate Permissive logic using block 17
+Electrical room overtemperature signal protect
+ASC_UMI_ACT Not working correctly
+ASC_UMI_ACT Not working correctly
+Increase Array size for ZoneTable - Out Of range Faults
+Flipper control logic from ROS desk(Orientation bit)
+WS Reefer Move out command LS crane not moving clear for WS crane
+Need to change some points Publish config. from "False" to "external "
+Gantry Wheel brake hydraulic unit signal
+Spreader lock and unlock protect
+Landed bypass at local OP station
+Headblock connect signal protect
+Micromotion requests from ROS should not use orientation bit
+13L Dropped Load
+Gantry 2 Auto Mode coil has an always off contact disabling it.
+Dynamic brake test causing drive fault 87
+Reefer Gate Trip when stowing
+Crane Adjustments to Be updated During commissioning
+Pilz Cleanup and Commenting
+Safeway speed window trip using single hoist mode
+Motor tempurature to drive
+Trolley and Gantry can not move when landed
+T , G and spreader telescope can not move when rope slack
+Tand G slowdown when spreader fault
+Twist light flash when not in position
+Update Hosts file
+Design Semi-auto training mode
+Add alarms for PILZ I/O and ROS Remote I/O station
+Operator Manual for Semi-auto & Sway control
+Hoist - Oil low level Alarm code
+CPLS system
+Added code for the GIMD.
+PQM meter change
+Vibration Monitor System communication
+tags from PLC for indication/fault/exp. in the LAN screen.
+Crane Plc - Master Rev 3.0 - Released
+Need to change some points Publish config. from "False" to "external "
+Spreader Headblock Cable Connect Fault
+PLC Number of ROS Stations Integer need to be changed from 10 to 7
+Crane Plc - Master Rev 4.0 - Released
+Need to change some points Publish config. from "False" to "external "
+Single Hoist mode causes speed window trip
+Single Hoist mode causes speed window trip
+Need to change point config.in PLC to be visible for HMI
+Maximum Stack Height PLC parameter needs to be changed from 5 high to 6 high
+MaxView PLC Output Program Correction for Scanner Oreintation
+Gantry_PosLimitErr_Af to be reinstated
+Stack_ID Typo for CMS_CraneId=25
+need tag PLC for indication/fault/exp. ORC interface in the LAN screen
+tag from PLC for indication/fault/exp. Vibration unit in the LAN screen.
+Air conditioner unit switching time not updated
+Hoist_PosMisMatch_Af faults when travelling
+EGD address overlap
+Critical Functions assessment
+Critical Functions assessment
+Boom - Anti Collision Certification: Commissioning and Report (Signed)
+Crane Plc - Master Rev 5.0 - Released
+Trolley lubrication system fault signal
+GIMD interface
+Traffic light interface - Hardware and Logic Addition.
+Correcting for truck orientation in cantilever lane must happen in the ASC PLC.
+Define PLC code changes required for TP-Interaction at Haifa
+Hoist Trim set to zero during landed retry
+Added the CGS EGD Exchanges.
+WS Lane positions setting ROS_LsTrgLane
+No Auto Seq timer for state 61 when maint gate is open
+Inconsistent floor height across blocks 24-30
+CX Island Site Version
+AlarmEnabled need off timer delay
+Added the CGS Interface code with the Maxview4d
+Frigortec wiring modifications
+Scanner Low energy warnings not working
+Lcms overload bypass not limiting hoist speed
+ETM modules faulting with Firmware 6.43
+Added the EGD Exchange and logic for the Mv4D Pan-Tilt functionality.
+EroomAmbient AC forced removed should stop unit
+Landed_PosRetries not reset when instruction is cancelled
+Updates to moving crane through truck lanes
+Crane Plc - Master Rev 6.0 - Released
+Adjusted the interlock to allow two cranes to operate in the same block.
+Added the floor height for the cantilever area.
+Function Blocks Library maintenance
+Added RCMS requests for the Next Block Operation and CGS enable.
+What is basis for applying Skew Logic at 22%?   Potential impact to rails, drive duty cycle.
+Crane Plc - Master Rev 7.0 - Released
+Hoist Load torque not saved during hoist Estop
+Orientation bit needs to be removed for motion permissive signals being sent to RPLC
+Spreader cable reel ' brake control - Single point failure mode
+Gantry feedback lost faults do not have a fault reset in the latch logic
+Multiple Maxview4D communication faults exist
+Trolley at cantilever is dropping gantry run permissive, which prevents running in auto
+PT system parameter updates
+PanAtStartPos is using the Tilt angle reference
+Attention when PLC code updated
+Mv4D CG data needs to be initialized
+Mv4DCG_JobConfiguration needs to have a value of 1
+Pass the data to Rplc for the ROS camera connect.
+Spreader regulator to be disabled in LS for blocks with slope
+Bug fixes from NIT missing at VIG
+Mv4D Chassis Guidance Parameters Adjustments.
+Corrected the Traffic Light Stop Logic.
+Corrected the Gantry Position Limits for the Stack B cranes.
+Revised the MaxVw_TrgTypBad Fault Logic.
+New Profibus Device- Wireless Pendant
+Sillbeam protection logic needs to be updated
+Hoist Gross load calculation
+Dual drive reference and feedback block , difference with other cranes
+problem in TransferZoneAccess POU
+Crane Plc - Master Rev 8.0 - Released
+Profibus Mapping mismatch for Gantry Cable reel
+Intermitent Delays in Data Transmission Between PLC and the ABB OCR External Database
+Intermitent Delays in Data Transmission Between PLC and the ABB OCR External Database
+Hoist2 Brake Pad temp not correct on ROS Screen
+E-Room overheats due to source and filter heat when AC not working (PLC SOFTWARE)
+New Dynamic brake test. V2.0
+Twist Locks high breakage rate during landings possibly related to speed limits
+Add Trolley Inclination Tool to the PLC Software
+Adjusted the crane span parameter.
+(COQ-02) NIT Lighting Control Circuit - Boom Floodlights to remain on in case of PLC Failure
+Account for OCR license plate reading requirements from both travel directions
+System_Comm_Af does not drop ready for auto
+P18857 Peru RTG Crane PLC releases
+Confirm Hoist brake oil temperature scaling factor
+Hoist loadcell factor
+FE on site needs to get help to configure Antisway in QC04
+Question regarding missing Gantry1Contactor block
+OCR OPC-UA inteface update
+Vibration System adjustment
+PLC Program "GantryControl" missing continuation contact for Gantr1.Estp and Gantr2.Estp
+Spreader telescope/retract command issue
+Trolley needs to move out of cantilever area when in auto and idle
+IO Check for %I01462 - 65
+CGS Lamp Out Signals %Q01379 -  1384
+Missing signals on PLC IO and program
+Swapped AI
+Custom Spreader Cable Reel & Gantry Cable Reel Logic for Stemmann Equipment
+Profibus Communications Not Tested
+Error 8038: %SD memory usage exceeds limits in _MAIN
+Spreader motor overload alarm
+Unnecessary alarm TrlyIO_MasterPBComm_Af
+Added ROS_OpStnPendant NO contact to Sound Gantry Moving Alarm
+CLPS system (part 2)
+Cannot hoist down when operating from Gantry or Trolley station
+Left Right Flipper Controls Reversed
+Spreadr Telescope Motor Overload CB status adjustment
+Back-out bypass functionality is not working when hoist is in down overtravel
+Wireless remote controller GSD and interface
+Hoist Emergency Mode Control Incomplete
+PLC and HMI Files of Crane 40 after renaming Hoist and Gantry variables and chnage of FB's and Fx classes
+Cable reel hardware configuration update and code change
+Crane PLC date/time variables need to be published for HMI-to-PLC date/time sync.
+Added code for the GIMD (part 2)
+Two sets of alarms for BTG communication fault
+Duplicate Alarms - Copy/Paste Error
+Gantry slowdown when crossing Cable reel pit
+BTG heartbeat signal
+Landside transfer zone limit switch position check
+Issue with AutoCode: ASC tries to leave Transferzone on a block where there is no TransferZone
+Preventing training ROS desks from taking control of cranes that are being commissioned
+Revision of Gantry_FwdPm and Gantry_RevPm
+Stk_LsIo_Af and Blk_WsIO_Af
+Trolly_NoistFltr_Af
+Cable reel permissive in Gantry run logic
+Cable Reel empty/full warning code change
+Horn active when gantry is moving in auto
+BTG offset
+FFT Commissioning
+No indication that there is a problem with Hoist motor RTD
+Update Version Number for Maxview4D Scanner PT Control EGD Block
+Crane Plc - Master Rev 9.0 - Released
+When E-stop pressed in ROS there is a delay of 8.7sec to Control off
+MaxViewComm LD Block uses local name reference
+Losing Work Instruction Enable bit during Auto
+Need to update ROS_TrgLaneNum logic for PML5 update
+Set up anemometers.
+QC16 lost ETM lost on communication
+QC16 lost ETM lost on communication
+Crane Plc - Master Rev 10.0 - Released
+MxVw4D_Inputs block update for clock
+GIMD Profibus DP station temporarily changed to 19
+RE: Missing the Brake Tests control logic in the PLC code
+RE: Missing the PLC code for H/T/B Brake Tests
+Old Code Restricting Trolley Auto Movements
+ROS Flipper Contact Change
+Cannot manually lower hoist in truck lane because of Mat_Down_Permit
+Gantry absolute encoder homing
+Chassis Guidance Requesting Operator - logic change
+Gantry bumper on the end of the rails is being detected by the anti collision sensors
+Gantry anti-colission stop requests are not dropping Auto
+Typo in the ACL gantry slowdown logic
+Parameter updates related to Chassis Guidance System
+CGS - sending JobPosition to MaxVw4D
+LSA_DissableFunction code change
+v2.01 Site code
+Horn active when moving gantry from ROS desk
+CGS -RED traffic light turns OFF when trolley is at target (in truck lane)
+CGS - M4DCG_JobTypeMisMatch_Flt is not drooping Auto
+OCR_SpreaderLanded datatype was set to Word
+Incorrect hardware configuration of Trolley IO versamax module
+Timer in Trolley Storm Pin Engaged Warning logic
+Antisway Control issues
+701C and 702C need Reversed Orientation Bit
+Triggers for Object detection and Full measurement requests need to be updated
+The original program can’t implement the Trim function, and there is not spreader home function for trim
+The trim home function should work when hoist is moving
+The FFT/anti-sway logic is not complete
+The WCS supervisor requires the error of the load cell to be within 2%
+Add the time-out interlock protection for wheel turn when going to 16 degrees and 90 degrees
+Add the interlock protection that gantry can’t move when any wheel turn over travel signals is missing
+Modified the logic for anti-sway motors can run in maintenance mode
+OCR_Move_Cm is activated in "default" PU/DO scenario
+Added and modified the logic for E-house side wheel turn pendant station and diesel side pendant station
+The “AirConditioner” block is totally modified according to the requirements
+Added the interlock protection between the fire system and the diesel engine
+Added the logic and alarms about single corner slack cable status detected by load
+Deleted the useless alarms for TPMS and modify the TPMS screens for LCMS and HMI
+Added the mute silence function for the buzzer when high wind warning/slowdown
+Added the absolute encoder communication alarms in logic and CMS for anti-sway motor 1- anti-sway motor 4
+Added a profibus slave for ARCK sensor in the cab configuration and imported 3 blocks
+Added hoist 2 power demand logic when diesel engine speed regulating function is working
+Modified the Modbus_SysID value from 6 to 3
+Install CPMD Logging Block in ASC PLC
+Gantry forward and reverse permissive logic have been modified according to the wheel turn in different modes
+When shore power is connected, the maximum of 20% speed will be allowed for hoist, trolley and gantry
+The CCTV commands are modified to meet the requirements
+Added the logic to set the hoist1 and hoist2 absolute encoders automatically
+Added the logic to detect hoist emergency brake pad wear alarms
+The spreader HIT detection signal is added to make hoist slowdown
+Some twistlock fault messages are not allowed to display in CMS when the spreader is in cargo beam mode
+Added the logic to detect gantry whisker switch faults
+2Some logic about the interface between PLC and CLPS/CPS has been modified or added according to the interface document
+AGSS was assigned 80Byte in/100Byte out in the configuration
+The configuration in both “DSV01ConsExch” and “TSV01ConsExch” has been modified
+EGD configuration about the 4 anti-sway motors have been renamed and modified
+The GSD was replaced with DP/DP Coupler for DP slave 6 (spreader) in the cab configuration
+Added timer in trolley stow pins disengage logic
+BayProfile - system fault logic is not indicating a fault.
+OCR Interface needs bay number added
+Change in OthCrn_Id logic (used to get OthCrn_OutSrv)
+Clearing of GantryAbsolutEncoderPosValid is NOT clearing GantrPosValid
+Changed value of KPT_PanMonitorRf
+Changes in TransferZoneAccess block
+Hoist Emergency Mode Logic update
+Hoist Emergency Mode Logic update
+Target out of position is not triggered during PU
+Crane PLC - ASC Master Rev 1.0 - Release
+Large timer value in state 54 logic
+Trolly_Pos_Tol is always set KTrolly_AtWSTol
+Update to Bug 8002- Gantry slowdown logic when crossing cable reel pit
+Trolley slowdown when hoist near top
+For now SIPH wants to manually lower on UTR
+Remove Gantry_PosRng_Af from Gantry_AbsEncPosValid reset logic
+When Gantr.PosValid is OFF use Gantr_AbsEnc_PositionFb for driving Gantr.InMin(Max)PosLim
+Revision of Road Crossing logic in GantryAuxControl block
+State32 function block has error when used for more than 32 states
+Increase sensitivity to gantry (re)calibration errors during LSA
+Maintenance ROS should be allowed to hoist down with flippers up
+New operator message indicating obstruction on the rails
+Maint ROS should be allowed to Hoist down out side of zone if operator takeover button is pressed
+Lubrication system contactor command - logic change requested by ZPMC
+Gantry run permissive same for both Pendant and Gantry operator station
+We need to move KGan_WheelDiameter from SystemParameters to TuneUpParameters.
+RTG22 V05.00 PLC code release
+Increase timer value in Hoist oil level low alarm logic
+When disconnecting ASC from the ROS, we lose CLPS_ON_CM and drop Auto
+Modified the alarm of the spreader mode sensors mismatch
+Sending BLOCK number to OCR is not correct when cranes operate in same block.
+Issue with stow requests from YPLC - ASC side
+RE: Synchronize position control of TLS system
+Change in Mv4DCG_FullMeasOnRq logic.
+Gantry stow pins not working for center stow position
+Maxview 4d traffic light fwd and rev logic updated as per crane orientation
+Timer value change in Gantry stow pins forward and reverse commands
+RFA_0 is bypassed when hoist bellow safe height or with spreader locked.
+FWD command is off after Trolley moves to cantilever, without active instruction, operated by Maintenance ROS
+VMR for Trolley/Gantry Target is using the incorrect target position for DropOffs (Haifa edition)
+HV room ventilation fan logic modified as per the request from ZPMC
+MM_XXX_BrkSlip_At is not used anywhere in the logic, but is being logged by CMS
+Changed value of KAuto_WSChkHgt to 18.6
+VMS_Setup_HB_OK logic needs to have timer increased
+Additional compensation in Delta_XPosCalc
+Several small changes have been made in the pendant logic
+Modified the spreader twistlock lock and unlock fault logic
+Problem with CLPS_CommErr2 logic
+PLC filter of CGS measurements
+Ulk1_Bypass_Enb and Land2_Bypass_Enb had initial Value set to ON
+Spredr_NotLanded in Hoist_UpPm
+LCMS Load Bypass not correctly implemented
+Typo in flipper position indication sent to ROS
+Logic setting trolley limit to cantilever waiting position is creating problems when ASC is in search states
+Crane PLC - ASC Master Rev 2.0 - Release
+Hoist Drive - Selecting 2nd Drive for Emergency mode
+Updating instructions (TruckPosition) in the middle of sequence creates problems with CGS operation
+Wrong interface program for CLS
+Include instruction number in OCR interface, when instruction involves PU/DO from truck lane
+PLCSignal name change
+16786 LSA improvement Old blocks V31.00 - Hoist Slow Speed
+07L Gantry 2 Brake command %Q different from all other cranes
+7L has a different model of ranger finder installed
+to add crane interlock due to e-room high RH
+Hoist DecSlowDnEnable Program is not competed
+Anti-sway enabled when not in MM maintenance mode
+Hoist encoder position invalid
+AGSS reference speed does not match feedback on RTG25
+DPW Requests Trolley Should be Interlocked if FFT is Disabled
+Added the blocks A9 and A10 special bays handling operation.
+Added Operation Mode Selection for the Block C1
+DPW requests modification to limit RPMs at startup
+Obtain MicroMotion Motor Temperature
+The confirmation of every movement to the VMT
+RTG25 had a major trim fault during endurance test
+Gantry Crane-to-Crane ACL Slowdown Modifications
+Skew Angle Calculation is not Correct
+Update logic about gantry waiting position before cross reefer
+Update the logic for CGS Job config
+Update the logic about moving out of reefer
+Stop updating Gantry reference when move out of cantilever automatically
+Update the logic of trolley path at reefer
+Radio pendant ROS simulation
+Instruction number to OCR System when the trolley in cantilever
+Crane PLC - ASC Crane Master Rev 3.0 - Released
+DPW requests MvSM bypass Master switch button and HMI button be added
+The enable variables for rung 57 to rung 60 in "GantryAuxControl" block should be exchanged
+Smart Move Operation Change Request by DPW
+Request to modify  diesel engine side limit
+Added Fire Suppression System Contact
+Request to modify gantry steering control
+Request to lower trim speed from 20% to 10%
+No new instruction allowed when HV room temperature reaches 35 deg celsius
+Added operator message for CLPS fault
+Reduce landing speed
+New operation require: Trim speed must be 4%. Currently, this is too fast
+Truck lane bit mustn’t block gantry movement.
+To position or lift plan containers (first level), use of bypass must not be used
+Modified HoistParams to change Spredr_TrmMaxAng and Spredr_TrmMinAng from 3.0 to 2.5 (DPW)
+Changed KHoist_SprHBlkWgt in LoadCellParams from 11.4 to 10.0
+Modifications were made to Trim and skew to swap the control inputs for each motion
+DWP requests swapping Skew and Trim switches
+Spredr_LandedTd is not driven by a coil
+DPW request adapting program to for Horn button and bypass button
+Trolley target number to ROS is wrong for even cranes
+DPWC requested direct data from PLC to VMT by serial cable.
+Publish change for trend recording
+Add CMS alarm for AGSS system switch
+End user requests Tire pressure be displayed in PSI instead of Bar
+DPW request eccentric loading not stop hoist motion
+DPW requests to modify the crane PLC for faster cross travel Gantry movement
+SIPG request Maintenance Position protect
+Crane PLC - ASC Crane Master Rev 4.0 - Released
+RTG22 Trim Fault
+Bay limit check is not working in Haifa
+Update Gantry slowdown logic
+Delay TP release request to TOS during Drop-off
+Update Mv4DCG_InTrgPos logic
+Reduce truck lane check height
+Gantry SpdRegBw update to 2.3 from 3.0 to increase the stop accuracy
+CG traffic light logic update to filter the CGS measurement jumping
+Update flipper auto fix logic which could cause flipper move below safe height
+ZPMC request to bypass the anticollission Laser Slowdown and stop function when ASC in at LS/WS Slowdown area
+Trolley can't move to the yard from truck lane at manual mode
+RTG24 collision when Anti-collision slowdown failed
+change the Gantry_ETD*_MinPos to NO Status
+YangShan P4F Host file
+Update bay reference limit logic
+Reduce trolley speed if position is invalid
+Trolly Reaches End of Travel When Testing Sway Control
+Master PLC code release Rev8_00
+Crane PLC - ASC Crane Master Rev 5.0 - Released
+Hardware configuration for Block 6 gantry farside analog input module
+Crane PLC - ASC Crane Master Rev 6.0 - Released
+Motion slowdown is set to 10% and must be 20% as the old cranes.
+Update Operator message to 206
+Crane PLC - ASC Crane Master Rev 7.0 - Released
+Customer Requests Hoist Overload Alarm To Be Checked Whenever Hoist Motion is Stopped
+Update KMaxVw_TrgZ_Max for Haifa project
+Trim fault reported on RTG23 after V8.0 installed
+ACM Maintanence logic error
+Costumer requires increase the Accel and Deccel ramp for Gantry motion
+FFT ropes create a trim and hoist slack rope while hoist down
+Cross travel is always in slowdown
+Operators reported new RTGS are slower than old ones
+Crane PLC - ASC Crane Master Rev 8.0
+RPLC/YPLC redundancy setup
+Costumers need to remove Hoist Up stop alarm from Hoist Up Permissive
+Wrong container weight send to DPW
+Added radio pendent operator station
+Move KAuto_Stk_FloorHgt to AutoParameters from TuneupParameters
+Increase gantry 1&2 AbsEnc rotation check speed from 1% to 1.5%
+Update Model learn logic for haifa project
+Limit Gantry and trolley speed when hoist is below check height at truck lane.
+update gantry zone tolerance logic when gantry is at reefer
+Update auto landing spreader regualtion logic
+zpmc request to bypass the Trolly_NoistFltrCB_Si
+Crane PLC - ASC Crane Master Rev 9.0
+Not able to reset Gantry Position different fault when crane is connected to remote
+Update CGS traffic light orientation logic
+Update CGS traffic light orientation logic
+add offset compensation for internal truck CGS
+Add Tilt angle change logic when CGS measurement jumping or no solution
+Block 2 only has two truck lanes
+Costumer requires separate inductive  Headblock Slack Rope sensor into left and right and add to the logic
+The wheels numbering for the new RTGs doesn't meet the old RTGs
+Crane PLC - ASC Crane Master Rev 10.0 - Released
+Revise the crane Plc alarm list
+Crane PLC - ASC Crane Master Rev 11.0 - Released
+ASC02L Trolly can not go to the stow position
+Crane PLC - ASC Crane Master Rev 12.0 - Released
+Trim reaches up to 6 degrees
+Generate alarm when gantry running and the BTG transponders are not detected for a certain time
+Duplicate Structure Use
+Crane PLC - ASC Crane Master Rev 13.0 - Released
+Start CGS triggering when gantry arrives the target
+Update flipper control logic for Haifa
+Update CLPS logic
+Update Trolley wait position to avid moving fwd and bwd when cgs jumping
+Update gantry zone limit for haifa
+Stop the Gantry when Gan1/Gan2 current difference is big
+Crane PLC - ASC Crane Master Rev 14.0 - Released
+SIPG Request Skew Protection
+Implementation of bug 8519
+Disable scanner 7 fault
+CPMD Logging OPC Interface update
+PLC Master release Version 0.0
+Bay profile logic update
+Update stack slope logic
+Update cable reel interface
+Spreader is losing position very often
+Additions on PLC code for CF+ added/modified functionality.
+Skew motion too slow.
+Rope Tension Pump Run Permit: Need for TLS pump run permit
+E-Room E-Stop PB1 Check [2BA-30Z] - Confirm
+landing retry 4 times
+update micro motion hold logic
+Disable Command Output if no instruction
+Disable CD comparing height
+Load update at state27
+LSA trigger timing update
+C1C2 anticollision bypass update
+Update Arrow display logic
+enable CGS in truck lane for LSA
+block C Job position update
+Flipper down permit without instruction
+Record crane operation time in truck lane
+update manual request 2 logic
+Update Maxview4D logic for haifa
+Reset Profibus master
+Add code to record BTG position calibration error
+Update state 27 and 52 timer to 300
+SpeedReg parameters Change
+RE: Anti-sway function not working
+Display Truck lane number as 0 on ROS Main screen
+Seperate CGS tolerance
+Disable reefer IO communication fault
+Enable gantry panel switch fault only on C1
+Add A9_A10 special bay check height
+Update flood light control logic
+Reduce truck lane check height to 10m from 11m
+Update gantry inertia
+RE: H/T/B absolute encoder and motor encoder position validate procedure
+Control off when the crane is idle for 8 hours
+Update cable reel fiber fault logic
+Block C1-Update the maximum height for spreader to unlock in cantilever area in manual mode.
+Auto flipper up for 9A and 10A when operating in special zones
+SLD fails to turn off
+Publish properties are set to FALSE for the variables in Seeport program block
+Move the system version parameter to SystemParameter
+RTG Engine Hour Meter: this value is negative. We can't check because the block is blocked.
+Modified the program during the startup commissioning
+Boom Operator Station IO Changes from ZPMC
+Publish property set FALSE for OCR_AcmId
+Spreader Double Container Pickup Protection Logic Not Working
+Spreader Side Shift IO Changes from ZPMC
+Temp Unlock Block - Max 5 Password Request
+No EGD communication between PILZ and RX3I
+Updated the initial value for YPLC1_Mv4DCG_OnRq to On
+Special position limit need to modified and improved in hatchcover mode
+Added timeout logic for CGS
+Updated logic for trolley waiting position at cantilever
+Motor Flux Not Decayed CMS Alarm
+Dropping the crane out of auto when Maxview 4d CGS losses communication
+Update logic for enabling ROS to connect during LSA pick up and drop off
+Spreader landed signal bypasses Spreader hoist up and Spreader run permissive
+Crane 4 PLC Modbus Communications Stops or Slows with EGD Traffic
+PanTilt unit Pan feedback -180 (reference is 180)
+Updated maximum target height for maxview
+Unstable TLS
+LSA doesn't work when CGS reports fault
+Updated logic for starting LSA scan during drop off if the truck is in position
+When operating in same bay crane is not pushing other crane after valid LSA solution
+QC06 - Snag Reset
+ASC02L V13 Initial Release
+Open Items #8 Aircraft Light CB warning
+Converter/Inverter TL_F3 (Communication) Fault
+TLS EOT Warning
+Gantry Motion Right By Itself
+AntiSway Control-Trolley Overshot & Hunted
+Open max skew tolerance to 0.05 when trolley in cantilever area
+Hoist Spreader Cable Reel Emergency Mode  Hoist Speed Clarification
+Description Change for Source Fbks
+Update Gantry Fwd and Rev permissive logic for LSA
+Move trolley to cantilever when LSA starts scanning the chassis
+Gantry tolerance in cantilever area during LSA job
+Site Update Version V13_02
+PLC sending unexpected EGD to Maxview4D
+Site Update Version V13_03
+Site Update Version V13_04
+missing EDG reference addresses for MaxView4D inputs
+Merging Duplicate Address from Bug 10910
+Hoist_LoadDet QC17 Registers Load with No Box
+Initial site changes 5/5/22
+Site Update Version V13_07
+Maxview 4d Y Pos and Z Pos signal fixes
+Crane LSA In position and Minor Changes
+Disable LSA in Special operating bays as per SIPG request
+Prevent gantry movement when trolley in cantilever area during LSA
+Enable Push function for LSA PU and DO as per SIPG request
+Disable All flipper down fault when crane operating in Special bays
+Maxview 4d State 23 Fix & AtTarg update
+TLS HMI page showing incorrect readings
+Update to reach state 35 along with LSA_UseMxVw4DData fix
+Button and mat updates
+Button and mat updates
+Stopping CGS measurement before LSA job start request
+45' Reefer Hoist Down Disable
+Auto Proceed PB 10 seconds Timeout Function
+Variable LSA_ResumeHgtInterlock Functionality
+Site Update Version V14_10
+Site Update Version V14_10
+PME Reports Error 8544 When Downloading to Flash Memory
+PLC Went Into STOP HALT Mode during crane operation
+Hoist Down in slow speed on DO at LSTA
+Site Update Version V14_12.
+LSA Alarm Point Update
+Operator Messages Update
+Maxview Ground Target Shuttle Mode Missing
+missing logic for  4D data collection
+Night Mode LS Auto Landing Fault after LSA PU code installed
+hosts file v2.0.19
+Minor changes to Gan pos rf and to VMR logic
+Gantry LSA Pickup Offset Issue
+Increasing Time On for LSA_TrgInPos
+LSA Gantry Limits Update
+Not getting a 4D solution / completed until gantry reaches offset position
+datatype mismatch in EGD communication to Maxview4D
+Site Update Version V14_14
+MX4DCB Status Feedback Not Implemented
+MX4DCB incorrect type and missing aux contact
+PLC Fault Table Has 'Error Code:402  LAN system software fault'
+Switch ON the girder lights from 18.00 to 6.00 as per SIPG request
+Added logic for traffic light speaker
+During LSA fault move trolley to cantilever and hoist to check height
+Enable trolley and gantry movement when landed sensor fault to complete the job manually
+OCR Interface needs gantry speed feedback added
+Updated logic for special operation bays to use the correct sequence states (Block 9 and Block 10)
+Disable trolley VMR and use Auto_TrolTrg  to move the trolley to Trg X solution for LSA
+Prevent auto flipper down during start of the instruction when gantry in special bay
+ASC03L V14_15 Release and Change Notes
+ASC01L 14_15 Lab Release
+Added logic to check if the LSA X solution is greater than the sill beam protection X postion
+Prevent LSA abort request when there is LSA solution and crane is toggle back to auto
+Release for cranes 1, 3-13
+Optimised the PLC code for LSA
+Customer Reports Operator Cannot Move Trolley When Landing On Containers
+Added new alarms to track the LSA faults with respect to the instruction number
+Allow ROS operator to set gantry position valid bit when there is a position difference fault
+Wrong Gantry Encoder in the logic
+Moving from Lane 2 to 4 and vice-versa.
+Restore Auto after an illegal entry.
+Twin logic must be modified as per RAM engineer request.
+RE: IC695CPL410 firmware version 10.15 or greater
+Reset LSA faults when the scan starts
+RE: io-mcp station profinet hardware configuration
+New Crane PLC - Master Rev 01 - Released
+Increase PT scan speed reference to 90% from 50%
+Rail Clamp Logic needs some changes
+During snag fault Hoist drioves still having power
+During an SOS snag, the logic creates a TLS Snag fault
+Logic need to be adjusted for Hoist freewheel
+Update the Max Delta X and Delta Y tolerance during LSA DO
+Add auto land fault alarm for LSA jobs
+Spreader pump permissive fault when Twist Lock Fault from RAM
+Over Load calculation using a formula.
+RE: Fail to write the position into the Hubner Absolute Encoder from the PLC
+Anti-Sway Is not Controlling Sway When Enabled
+Rope tensio  alarms
+Rope tensio  alarms
+Rope tensio  alarms
+Profinet IP Address return to original value when connect to PLC
+TP security control issues- Haifa
+Costumer request bypass changes
+Costumer request bypass chnages
+Crane PLC - CRMG Master 1.0 Release
+Added LSA skew in range in LSA_SystemErr_Af fault logic
+Updated Operator message 43 and 44 for Block C1
+Costumer request to add Frame mode
+DPW Requests Addition of TTDS Alarm Buzzer
+ZPMC Requests Removal of Seat Pressure Sensor From Boom Run Pm
+Boom motion can run while trolley storm pins are not disengaged
+Client Requests Hoist Height Display in Cabin to show Negative Numbers
+LSA skew position in range limit is set to 0.5 in PLC
+Client Requests Change to Hatch Cover Trolley Min Position Limit
+Wind Speed is Likely Incorrect on PLC/HMI
+DPW Requests Boom Movement Limitations From Operator Cabin
+LASE LCPS Ship/Stack Profile PLC logic Issues
+Transfer zone access to current zone logic issues
+Gantry Absolute Encoder Reference Address
+Antisawy function disable the parking position
+Operator message 57 logic updated
+Open Items #5 Hoist brake set but slipping faults
+Open Item #11 Trolley function not capable once landed on box.-  Use to work
+Updated gantry anticollision logic when approaching other crane which is stowed
+Disable hoist VMS as per SIPG request
+Added logic to switch the hours to turn on the girder lights during winter time and summer time
+Hoist_LandedSd1 won't update reset position on next landed transitition
+DPW Requests All Bypass Signals Come with Motion Slowdown and Alarm Buzzer
+Operational Scenario Possibly Needs Addition of Bypass for TLS/Hoist Movement
+Lase LCPS trolley Control  disables in Hatchcover mode
+TLS EoT warnings due to home position out of range
+CD delay in handling the instructions
+Separated PT chassis scan start and end position for PU and DO
+Update auto sequence logic for sequence state 62
+Errors Found on GCR and Spreader Cable Reel Logic
+Prevent auto flipper up for LSA PU when there is a single 20ft container on chassis
+Crane PLC - CRMG Master 2.0 Release
+Add OCR illumination bit to control the girder lights in night
+Update publish properties to External read only for historian variables
+RE: GPA QC Project - Backup software and startup workbook before I leave the site on 26-11-2022
+SIPG requested to bypass trolley and gantry zone limits in special condition
+Crane PLC - CRMG Master 3.0 Release
+Logic changes for Auto_LsEntryPm
+Gantry_RevPm issue in LSA sequence
+No Gantry_FwdPm when LSA enabled and Gantry is in stack
+VMR Disabled for LSA
+Gantry not moving to LSA target position
+MaxViewCalc Trolly_Trg_Tol logic
+Remove Dropoff Shifting Logic - Not used at HPH sites
+Auto_SpdRegMd turning off
+PLC Modifications for Maintenance Use of Gantry Station
+VMR_Gan_Delta not turning on for LSA
+LSA Trim Regulate Change
+LSA Pause Enable Change
+LSA DO Button State Change
+Hoist Down Perm - LSA System Error Bug
+LSA to State 56 Fix
+LSA to State 62 Fix
+Auto_HoistSafeHgt not triggering in state 66
+Zone Limits not changing in LS
+Hard Coded Limit bypassing limits
+Customer requests to change Twin Up/Down button to Left side mando control
+Client Requests Addition of SideShift Centering Function
+KLSA_DOSkewLim Constant missing from LSASettings
+LSA_DOTrimCompAct not enabled
+DPW Requests Addition of Gantry Slowdown Switch for Operator
+DPW Requests LCPS & Anti-Sway to not be disabled from OpCabin
+LSA_UnsafeToOperate_Af update
+State 28 and 53 Update - Remove Cantilever State 23 Related Contacts
+DO 20 foot Rear not returning from offset position
+LSA Gantry Offset Return on Solution Fail
+Addition of Correct Hoist Height for Trolley Parking Ls Gantry Station Buzzer
+Ls Gantry Station Hoist/Gantry Movement/Speed Issues
+Cargo Beam Mode Hoist Movement Issue
+Enable KLSA_VMRGanSpdLim KLSA_VMRGanGain
+Enable KLSA_VMRGanSpdLim KLSA_VMRGanGain
+Cargo Beam Mode Removed from Boom Run Pm
+Gantry movement with Boom at 60 degrees needs to be verified
+Crane PLC - CRMG Master 4.0 Release
+Rear Container LSA Shift Logic - Not used for HPH
+LSA_SystemError added to LSA_DisableFunctions
+DPW Requests PME to have Password
+Add Additional ACM Parameters
+State 42 (HOIST slow for initial LSA Pickup) bypassed
+Do not zero trim until hoist is past check height
+ASC 01-05L EGD Files
+LSA Gantry Return on Fail
+Trolley in LSA Auto Pos Fix
+Redundant Driver Off Mat Logic
+LSA Signal Updates
+22
+LSA Pause Enable Fix
+Review Op Messages and Alarm Help
+Customer Requests Latching Stop & Slowdown Requests
+Crane PLC - CRMG Master 5.0 Release
+LSA Landing Attempts not limited to 1
+Remove Redundant State 62 Rung
+LSA_DisableFunctions true after MAxview4D Reset
+LCMS add Power data record (P20847)
+Chassis Profile and Chassis number need to be used to determine JobConfig
+In Manual showing in Auto. Auto_AtoExe true in State 85
+Ros Land bypass twistlock fault  (P20847)
+Add missing Site PLC changes to Master
+Increase Gantry_Trg_Tol for LSA PU DO
+Add separate gantry offset for 40
+Break LSA_DisableFunctions latch when not in LS
+Replace OrentationTrolley with Orientation
+LSA Eccentric load detection
+IGV dropoff not use shift (P20847)
+Bypass Hoist Break fault for gantry stop (P20847)
+Losing Auto_CrnAtTrg in normal operation in stack.
+Move KSystem_Version to SystemParamters
+Add LSA_DrvOnMat_En missing coil
+Set Trim at start of lowering sequence
+Increase Skew Lead Lag Regulator gains for LSA
+Pickup twistlock fail sequence waiting for button when back to state 35
+Customer Request LSA Button Press Changes
+Add missing contact for LSA_Auto_Land_Af
+Remove Redundant LSA_DriverMat_En code
+Allow Message 188 when not in LS
+KLSA_MaxSkewLim not used for LSA DO
+Losing Auto_LsEntryPm during Manual execution in LS
+Enhancements for LSA Landing Performance
+Reduce for LSA Check Height for LSA
+Hoist trim to zero when Ros hoist up below clear height
+Limit hoist speed on LSA Pick Up
+Reduce for LSA Check Height for LSA
+Several changes to CRMG Master 5.0
+Trolly emergency function
+Update of SDFb_E2 and DDFb_E2 library blocks.
+Crane PLC Master release version 4.00
+Add Alarm for DriverAck timeout
+Enable Slower hoisting speed for ROS
+Gantry not moving into LS in Learn mode
+Reduced gantry speed only required when collecting data
+VMR_Gan_YInDb dropping out during LSA
+PLC code for new E-house fire suppression system.
+Crane Master PLC Rev 00 (Duplicates 152' Cranes)
+Crane PLC - CRMG Master 6.0 Release
+Cabin Access Gates do not Open at Trolley Park Position
+Trolley Position Calibration & Limit Switch Logic Modification
+Spreader Cable Reel Unwinds During Loss of Communication
+Host file
+Add driver verify button on ROS_Main screen for testing
+Gantry at MxVw4D_GanAtOffPos should use clamped position ref
+Gantry Offset setting incorrectly when PU and DO is in LS
+LSA_DisableFunctions latch should only dropout after exiting LS
+Some changes based on P21155_CRMG_Master_V6_230209
+PLC Sweep time is big than 50ms
+Disable Maxview4d Comm loss faults when LSA is not enabled
+Update PLC Code To Clear Remote Outputs On Communications Loss
+Update PLC Code To Clear Remote Outputs On Communications Loss
+Bubenzer Overload Warning -K2
+DPW Requests Addition of OpCab Bypass Permissive Switch at Gantry Station
+Crane PLC - CRMG Master 7.0 Release
+LSA Additional Operator messages
+Repeat Move not disabled for Manual moves
+Crane requests ROS operator during LSA moves
+PLC Can not get zonetable from CraneDirector
+Crane PLC Master release version 5.00
+Some site changes based on version 7
+Disable LSA when Learn Mode is active
+Use State 55 to lower slow for LSA DO
+Change State 23 delay to 180
+Anti-Sway and LASE LCPS Do Not Function Simultaneously
+Disable LS Truck Driver Booth Limit when Learn mode is active
+Hoist running time in state state 51-52
+WkIns_Put_RfWlkWay Logic fix
+Use LSLnxTrolTrgPos positions instead of zone table in LeanMode
+PME Found Unlicensed Target when we open the third PLC Code in RCMS Computer
+Spreader twistlock lock and unlock fault logic.
+Igus Chain breakage detection
+Add Reference Address To PLC Project for Scanner Power Off Relay
+Add Reference Address for MVSL Enable/Disable Switch to be Added in E-house
+CLD Interface
+Crane PLC - Master Rev 04 - Released
+CrossRoad_ASCPLC Update
+Gantry Position Array update
+PLC logic update related to OTR and UTR operation
+BCT Initial Release V21_00
+Gantry Slowdown limit function update
+Modifications about FSS, CLPS and Vibration
+Fix block 2_3 Landside Lamp Test for AutoAck_IL
+Disable Driver push button faults when not in LSA mode
+Trolly Can not move when Position is invalid
+TP Request update in PLC Code
+Floodlights update in PLC Code
+CMS datalogging error caused by a PLC Point:  CMDS_Spar2cnt
+HoistSnag Program Block Changes
+PED Requesting Renumbering of TLS Cylinders
+System Parameters for Spreader Cable Reel
+Modbus1/2/3 are #ALW_OFF
+Boom.FrRoundTm has different value than site
+Maintenance and Girder Crane limit switch update
+MicroMotion speed reference limit update
+Update the Trolly Inertia when Trolly is in Emergency mode
+Customer request to add feature to generate LSA solution without executing PU DO
+Master Release CPLC Rev 1.01
+Master Release ENIU Rev1.00
+TRT and CTRT rope tensioner performance
+ENIU Target LCV01 should be set to "Local Single"
+Update ETM ip address from 165.156.32.208 to 165.156.11.208
+ENIU targets Produced and Consumed IP updated
+Basic Crane Function (BCF) Acceptance Test Modification
+OCR Interface update
+Gantry Center stow position slowdown function update
+Add Trim offset for Slope - BCT
+SPLC Estop after un-stowing - BCT
+Power Factor Correction KVAR Scaling Incorrect
+PQM Alarm Messages
+Hoist Load Cells weight values different than SIBRE
+RE: Some questions for PLC
+Set Spreader size to 20ft during learn mode
+Add Gantry_AtLS contact to LSA_PulseButton_States
+Add Missing Hoist SD Logic - BCT
+Clear valid signals when LSA_DisableFunctions is true on PU
+Control Spreader skew pos during manual LSA PU DO
+Reduce ACM Manual Skew Ref
+HV Room OverTemp alarm
+Use correct blocked lane bits for even blocks
+Move gantry to LSA start scan position
+Reset LSA_DisableFunctions outside LS and Travelling to WS
+Gantry Cablereel permissive update
+Gantry AbsEncoder Calibrate for crane close to the Road
+CLPS_HoistEstop_PM is available when Radio opetator station is selected
+kMaxVw_HasACL update
+KAuto_Stk_MaxUlkHgt update
+CableReel MaX and Min Position limit
+Enhance LSA Landing accuracy - Corner Delta
+Increase KLSA_PUHstSlwSpdDist to 2.4
+Allow 1 retry during LSA drop off not landed
+Drop out of auto when LSA_DisableFunctions turns on
+Reduce Hoist speed during LSA Drop off
+Increase ACM skew Gain for heavy container
+BCT Site Release V21.04
+Hoist slowdown request from CLPS when getting a container form chassis
+Troll leave Cantilver side and kept at Status 6 when Trolly is already at trgpos
+CrnRqOpr Change - Customer Request to remove ROS from LSA PU sequence
+Change to Manual when Maxvie4D Chassis target mismatch
+Crane not moving to LS when Reefer is occupied
+TRT and TCRT protection against overtension
+Gantry bump permissive
+Stop LSA_TMD2_Run_Pm when TMD Happened
+GCR Profinet Speed Reference and Feedback Scaling
+Site Update for Tos Test
+RE: Some alarms and Faults do not display on HMI alarm screen
+PLC Master Release Version 9.05
+Tongsheng project 4D active Time sequence modification by Customer
+CLD Anti-lift bypass input update
+LSA Data Logging - PRODUCTION_LOG data errors
+Filpper light status feedback chaos o ROS desk
+ASC Finish the DO instruction and then move out of the clear range
+TRT State 2 - Regulate Rope Tension Issues & TRT Tension Limit
+Hoist Rope Weight not Accounted for in Weight Calculation
+Send CLPS_NotOk To OperatorMessage
+If pick up position updated from cantilever to another cantilever area, ASC will not apply new TP
+RE: Fault alarms of QP Viewer
+RE: Hoist absolute encoder mounting location
+RE: Add a block for CCTV control
+moved  kLdMeas_LCSclFctr  to tuneup parameters
+Move Gantry_SafeHgt_Af to ROS_OprMsgNum
+Anti-Sway - Single Faulty Beacon Causes Major Trolley Motion Issues
+LED New message from end user
+RE: Communication between Genset controller and Moxa gateway
+B01 Maxbay update
+CGS and Chassis Position Update on ROS_Main In ASC Code
+Update Publish for Yard HMI Points
+Site Update request from ZPMC for Loadcell  CLD and Antilift
