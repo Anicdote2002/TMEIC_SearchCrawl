@@ -96,7 +96,7 @@ def display_grouped_data():
     text_widget.pack(fill="both", expand=True)  # fill the entire window
 
     # Open and read the text file
-    file_path = ".\source\grouped_issues_based_on_keywords.txt"  # Replace with the path to your text file
+    file_path = r"C:\Users\Aniruddh.Chauhan\Documents\Bugzilla Data Mining\source\grouped_issues_based_on_keywords.txt"  # Replace with the path to your text file
     try:
         with open(file_path, "r", encoding="utf-8") as file:
             file_contents = file.read()

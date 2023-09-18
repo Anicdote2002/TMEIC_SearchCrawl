@@ -1,9 +1,12 @@
-Fix IP   Maxview4D      06L
-PU gantry    location
-EnterInstruction      Wkins_Get_ChsProf  Wkins_Put_ChsProf
-LSA
-RPTMAXVIEW4D
-Specs  LCMS Laptop
-development license   LCMS
-configuration
-BCT LSA Reporting
+P19687 BeiBu Gulf Maxview Startup
+toolkit  maxview laser alignment
+MAXVIEW IGV
+MAXVIEW   IGV  TRUCK  trolley
+Maxview Skew  Rotate  CWCCW reversed
+Maxview Anticollision     trigger     maxview
+Maxview IGV   4D   Trim_List_Skew
+Maxviewini    Type D CPUs
+LMS Scanner   Busy
+MaxviewRT
+Maxview
+Maxview  ACL heartbeat

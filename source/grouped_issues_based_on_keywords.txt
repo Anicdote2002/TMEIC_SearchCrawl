@@ -1,77 +1,146 @@
-Keyword_Summary: LSA
-Keyword_Bug_ID : LSA
+Keyword_Summary: Maxviewini
+Keyword_Bug_ID : Maxviewini
 Associated Summaries:
-Summary:- LSA reporting setup | Bug ID:- 11621
-Summary:- BCT LSA Reporting setup | Bug ID:- 12041
 
-Keyword_Summary: gantry
-Keyword_Bug_ID : gantry
+Keyword_Summary: LMS
+Keyword_Bug_ID : LMS
 Associated Summaries:
-Summary:- PU gantry moves to target location and stops instead of going to offset position | Bug ID:- 11536
+Summary:- LMS Scanner stuck in Busy State | Bug ID:- 11759
 
-Keyword_Summary: location
-Keyword_Bug_ID : location
+Keyword_Summary: D
+Keyword_Bug_ID : D
 Associated Summaries:
-Summary:- PU gantry moves to target location and stops instead of going to offset position | Bug ID:- 11536
+Summary:- Maxview.ini Parameter changes for Type D CPUs | Bug ID:- 11736
 
-Keyword_Summary: IP
-Keyword_Bug_ID : IP
+Keyword_Summary: CPUs
+Keyword_Bug_ID : CPUs
 Associated Summaries:
-Summary:- Fix IP address of Maxview4D computer in host file for 06L | Bug ID:- 11516
+Summary:- Maxview.ini Parameter changes for Type D CPUs | Bug ID:- 11736
 
-Keyword_Summary: LCMS
-Keyword_Bug_ID : LCMS
+Keyword_Summary: Scanner
+Keyword_Bug_ID : Scanner
 Associated Summaries:
-Summary:- Specs of LCMS Laptop computer do not match | Bug ID:- 11726
-Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
+Summary:- LMS Scanner stuck in Busy State | Bug ID:- 11759
 
-Keyword_Summary: development
-Keyword_Bug_ID : development
+Keyword_Summary: MAXVIEW
+Keyword_Bug_ID : MAXVIEW
 Associated Summaries:
-Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
+Summary:- MAXVIEW IGV model | Bug ID:- 9410
+Summary:- MAXVIEW scan the IGV and TRUCK from trolley moving direction | Bug ID:- 9412
 
-Keyword_Summary: Fix
-Keyword_Bug_ID : Fix
+Keyword_Summary: Anticollision
+Keyword_Bug_ID : Anticollision
 Associated Summaries:
-Summary:- Fix IP address of Maxview4D computer in host file for 06L | Bug ID:- 11516
 
-Keyword_Summary: Reporting
-Keyword_Bug_ID : Reporting
+Keyword_Summary: Startup
+Keyword_Bug_ID : Startup
 Associated Summaries:
-Summary:- BCT LSA Reporting setup | Bug ID:- 12041
+Summary:- P19687 BeiBu Gulf Maxview Startup | Bug ID:- 9286
 
-Keyword_Summary: license
-Keyword_Bug_ID : license
+Keyword_Summary: trigger
+Keyword_Bug_ID : trigger
 Associated Summaries:
-Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
+Summary:- Maxview Anti-collision calculation and Control on trigger not ok in new maxview | Bug ID:- 9765
 
-Keyword_Summary: configuration
-Keyword_Bug_ID : configuration
+Keyword_Summary: MaxviewRT
+Keyword_Bug_ID : MaxviewRT
 Associated Summaries:
-Summary:- configuration testing will need to be done on initial setup at site | Bug ID:- 11741
+Summary:- MaxviewRT crashes after restart | Bug ID:- 11760
 
-Keyword_Summary: EnterInstruction
-Keyword_Bug_ID : EnterInstruction
+Keyword_Summary: TRUCK
+Keyword_Bug_ID : TRUCK
 Associated Summaries:
-Summary:- EnterInstruction does not include data for Wkins_Get_ChsProf or Wkins_Put_ChsProf | Bug ID:- 11537
+Summary:- MAXVIEW scan the IGV and TRUCK from trolley moving direction | Bug ID:- 9412
 
-Keyword_Summary: Laptop
-Keyword_Bug_ID : Laptop
+Keyword_Summary: maxview
+Keyword_Bug_ID : maxview
 Associated Summaries:
-Summary:- Specs of LCMS Laptop computer do not match | Bug ID:- 11726
+Summary:- toolkit for maxview laser alignment | Bug ID:- 9398
+Summary:- Maxview Anti-collision calculation and Control on trigger not ok in new maxview | Bug ID:- 9765
 
-Keyword_Summary: BCT
-Keyword_Bug_ID : BCT
+Keyword_Summary: toolkit
+Keyword_Bug_ID : toolkit
 Associated Summaries:
-Summary:- BCT LSA Reporting setup | Bug ID:- 12041
+Summary:- toolkit for maxview laser alignment | Bug ID:- 9398
 
-Keyword_Summary: PU
-Keyword_Bug_ID : PU
+Keyword_Summary: BeiBu
+Keyword_Bug_ID : BeiBu
 Associated Summaries:
-Summary:- PU gantry moves to target location and stops instead of going to offset position | Bug ID:- 11536
+Summary:- P19687 BeiBu Gulf Maxview Startup | Bug ID:- 9286
 
-Keyword_Summary: Specs
-Keyword_Bug_ID : Specs
+Keyword_Summary: ACL
+Keyword_Bug_ID : ACL
 Associated Summaries:
-Summary:- Specs of LCMS Laptop computer do not match | Bug ID:- 11726
+Summary:- Maxview and ACL heartbeat lost | Bug ID:- 11916
+
+Keyword_Summary: Gulf
+Keyword_Bug_ID : Gulf
+Associated Summaries:
+Summary:- P19687 BeiBu Gulf Maxview Startup | Bug ID:- 9286
+
+Keyword_Summary: reversed
+Keyword_Bug_ID : reversed
+Associated Summaries:
+Summary:- Maxview Skew and Rotate angle CW/CCW reversed | Bug ID:- 9704
+
+Keyword_Summary: Skew
+Keyword_Bug_ID : Skew
+Associated Summaries:
+Summary:- Maxview Skew and Rotate angle CW/CCW reversed | Bug ID:- 9704
+
+Keyword_Summary: alignment
+Keyword_Bug_ID : alignment
+Associated Summaries:
+Summary:- toolkit for maxview laser alignment | Bug ID:- 9398
+
+Keyword_Summary: Rotate
+Keyword_Bug_ID : Rotate
+Associated Summaries:
+Summary:- Maxview Skew and Rotate angle CW/CCW reversed | Bug ID:- 9704
+
+Keyword_Summary: laser
+Keyword_Bug_ID : laser
+Associated Summaries:
+Summary:- toolkit for maxview laser alignment | Bug ID:- 9398
+
+Keyword_Summary: Busy
+Keyword_Bug_ID : Busy
+Associated Summaries:
+Summary:- LMS Scanner stuck in Busy State | Bug ID:- 11759
+
+Keyword_Summary: heartbeat
+Keyword_Bug_ID : heartbeat
+Associated Summaries:
+Summary:- Maxview and ACL heartbeat lost | Bug ID:- 11916
+
+Keyword_Summary: IGV
+Keyword_Bug_ID : IGV
+Associated Summaries:
+Summary:- MAXVIEW IGV model | Bug ID:- 9410
+Summary:- MAXVIEW scan the IGV and TRUCK from trolley moving direction | Bug ID:- 9412
+Summary:- Maxview IGV target from 4D not include Trim_List_Skew data | Bug ID:- 10729
+
+Keyword_Summary: Type
+Keyword_Bug_ID : Type
+Associated Summaries:
+Summary:- Maxview.ini Parameter changes for Type D CPUs | Bug ID:- 11736
+
+Keyword_Summary: trolley
+Keyword_Bug_ID : trolley
+Associated Summaries:
+Summary:- MAXVIEW scan the IGV and TRUCK from trolley moving direction | Bug ID:- 9412
+
+Keyword_Summary: CWCCW
+Keyword_Bug_ID : CWCCW
+Associated Summaries:
+
+Keyword_Summary: Maxview
+Keyword_Bug_ID : Maxview
+Associated Summaries:
+Summary:- P19687 BeiBu Gulf Maxview Startup | Bug ID:- 9286
+Summary:- Maxview Skew and Rotate angle CW/CCW reversed | Bug ID:- 9704
+Summary:- Maxview Anti-collision calculation and Control on trigger not ok in new maxview | Bug ID:- 9765
+Summary:- Maxview IGV target from 4D not include Trim_List_Skew data | Bug ID:- 10729
+Summary:- Maxview computer DISK is almost full | Bug ID:- 11899
+Summary:- Maxview and ACL heartbeat lost | Bug ID:- 11916
 
