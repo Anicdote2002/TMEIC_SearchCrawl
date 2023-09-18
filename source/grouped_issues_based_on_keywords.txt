@@ -1,43 +1,8 @@
-Keyword_Summary: Laptop
-Keyword_Bug_ID : Laptop
+Keyword_Summary: LSA
+Keyword_Bug_ID : LSA
 Associated Summaries:
-Summary:- Specs of LCMS Laptop computer do not match | Bug ID:- 11726
-
-Keyword_Summary: PU
-Keyword_Bug_ID : PU
-Associated Summaries:
-Summary:- PU gantry moves to target location and stops instead of going to offset position | Bug ID:- 11536
-
-Keyword_Summary: Fix
-Keyword_Bug_ID : Fix
-Associated Summaries:
-Summary:- Fix IP address of Maxview4D computer in host file for 06L | Bug ID:- 11516
-
-Keyword_Summary: development
-Keyword_Bug_ID : development
-Associated Summaries:
-Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
-
-Keyword_Summary: license
-Keyword_Bug_ID : license
-Associated Summaries:
-Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
-
-Keyword_Summary: configuration
-Keyword_Bug_ID : configuration
-Associated Summaries:
-Summary:- configuration testing will need to be done on initial setup at site | Bug ID:- 11741
-
-Keyword_Summary: EnterInstruction
-Keyword_Bug_ID : EnterInstruction
-Associated Summaries:
-Summary:- EnterInstruction does not include data for Wkins_Get_ChsProf or Wkins_Put_ChsProf | Bug ID:- 11537
-
-Keyword_Summary: LCMS
-Keyword_Bug_ID : LCMS
-Associated Summaries:
-Summary:- Specs of LCMS Laptop computer do not match | Bug ID:- 11726
-Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
+Summary:- LSA reporting setup | Bug ID:- 11621
+Summary:- BCT LSA Reporting setup | Bug ID:- 12041
 
 Keyword_Summary: gantry
 Keyword_Bug_ID : gantry
@@ -54,21 +19,56 @@ Keyword_Bug_ID : IP
 Associated Summaries:
 Summary:- Fix IP address of Maxview4D computer in host file for 06L | Bug ID:- 11516
 
-Keyword_Summary: LSA
-Keyword_Bug_ID : LSA
+Keyword_Summary: LCMS
+Keyword_Bug_ID : LCMS
 Associated Summaries:
-Summary:- LSA reporting setup | Bug ID:- 11621
+Summary:- Specs of LCMS Laptop computer do not match | Bug ID:- 11726
+Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
+
+Keyword_Summary: development
+Keyword_Bug_ID : development
+Associated Summaries:
+Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
+
+Keyword_Summary: Fix
+Keyword_Bug_ID : Fix
+Associated Summaries:
+Summary:- Fix IP address of Maxview4D computer in host file for 06L | Bug ID:- 11516
+
+Keyword_Summary: Reporting
+Keyword_Bug_ID : Reporting
+Associated Summaries:
 Summary:- BCT LSA Reporting setup | Bug ID:- 12041
+
+Keyword_Summary: license
+Keyword_Bug_ID : license
+Associated Summaries:
+Summary:- Using a TMEIC development license for the LCMS spare laptop | Bug ID:- 11739
+
+Keyword_Summary: configuration
+Keyword_Bug_ID : configuration
+Associated Summaries:
+Summary:- configuration testing will need to be done on initial setup at site | Bug ID:- 11741
+
+Keyword_Summary: EnterInstruction
+Keyword_Bug_ID : EnterInstruction
+Associated Summaries:
+Summary:- EnterInstruction does not include data for Wkins_Get_ChsProf or Wkins_Put_ChsProf | Bug ID:- 11537
+
+Keyword_Summary: Laptop
+Keyword_Bug_ID : Laptop
+Associated Summaries:
+Summary:- Specs of LCMS Laptop computer do not match | Bug ID:- 11726
 
 Keyword_Summary: BCT
 Keyword_Bug_ID : BCT
 Associated Summaries:
 Summary:- BCT LSA Reporting setup | Bug ID:- 12041
 
-Keyword_Summary: Reporting
-Keyword_Bug_ID : Reporting
+Keyword_Summary: PU
+Keyword_Bug_ID : PU
 Associated Summaries:
-Summary:- BCT LSA Reporting setup | Bug ID:- 12041
+Summary:- PU gantry moves to target location and stops instead of going to offset position | Bug ID:- 11536
 
 Keyword_Summary: Specs
 Keyword_Bug_ID : Specs
