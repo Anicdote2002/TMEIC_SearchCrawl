@@ -26,7 +26,6 @@ def search_components():
     selected_option = option_var.get() # User selected search component 
     issue_count = 0
     issue_list = []
-
     for bug in json_data["bugs"]:
         if(bug ["component"] == selected_option):
             issue_list.append(bug["summary"])
@@ -45,26 +44,38 @@ def search_components():
     fetch_data_functions.keyword_max_counter(filtered_data)
     
     # Generate Keyword List and Output list in a txt file
-    keywords_set = set()
+    unique_keywords_set = set() 
+    repeated_keywords_list = []
+
     for filtered_sum in filtered_data:
-        valid_keyword = re.findall(pattern, filtered_sum)
-        keywords_set.update(valid_keyword)
-    keywords_list = list(keywords_set) 
+        valid_keyword = re.findall(pattern, filtered_sum) 
+        unique_keywords_set.update(valid_keyword)   
+        repeated_keywords_list.extend(valid_keyword)  
+
+    unique_keywords_list = list(unique_keywords_set) 
+    top_keywords_list = fetch_data_functions.get_top_keywords(repeated_keywords_list, 20) # Sus, Redo this line
+
     with open("keyword_list.txt", "w") as keyword_file:
-            for item in keywords_list:
-                keyword_file.write(item + "\n")
+            for item in unique_keywords_list:
+                keyword_file.write(item + "\n") 
+    with open("top_keywords.txt", "w") as top_keywords_file:
+        for keyword, count in top_keywords_list:
+            top_keywords_file.write(f"{keyword}: {count}\n")
 
     # Initialize empty dictionary for grouping summaries based on each keyword in the dictionary
     grouped_summaries = {}  
     grouped_bug_ids   = {}
-    for keyword in keywords_list:
+    # grouped_comments  = {}
+    for keyword in unique_keywords_list:
         grouped_summaries[keyword] = [] # Initialize an Empty list for similar summaries with the keywords as the key in the dictionary i.e. <key>Keyword <value>Summaries List
         grouped_bug_ids  [keyword] = [] # Initialize an Empty list for similar summaries's bug ids with the keywords as the key in the dictionaryi.e. <key>Keyword <value>Bug IDs List
+      # grouped_comments [keyword] = []
         for bug in json_data["bugs"]:
             if (bug ["component"] == selected_option): 
                 if keyword in bug["summary"].split():
                    grouped_summaries[keyword].append(bug["summary"]) # Append to list of the summaries under a particular keyword
                    grouped_bug_ids  [keyword].append(bug["id"])      # Append to list of the bug ids
+                  # grouped_comments [keyword].append(bug["comment"]) 
 
     with open("grouped_issues_based_on_keywords.txt", "w", encoding="utf-8") as file:
         pass
@@ -85,16 +96,45 @@ def search_components():
     with open("component_fetch_filtered.txt", "w") as file2:
         for item in filtered_data:
             file2.write(item + "\n")
-    
-
-def display_grouped_data():
+      
+def display_keywords():
     root = tk.Tk()
-    root.title("Text File Viewer")
-
+    root.title("Keywords List")
     # Create a Text widget to display the file contents
     text_widget = tk.Text(root, wrap="none")  # wrap="none" to disable text wrapping
     text_widget.pack(fill="both", expand=True)  # fill the entire window
-
+    # Open and read the text file
+    file_path = r"C:\Users\Aniruddh.Chauhan\Documents\Bugzilla Data Mining\source\keyword_list.txt"  # Replace with the path to your text file
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            file_contents = file.read()
+            text_widget.insert("1.0", file_contents)  # Insert the file contents into the Text widget
+    except FileNotFoundError:
+        text_widget.insert("1.0", "File not found.")
+    # Start the Tkinter main loop
+    root.mainloop()
+def display_top_keywords():
+    root = tk.Tk()
+    root.title("Keywords List")
+    # Create a Text widget to display the file contents
+    text_widget = tk.Text(root, wrap="none")  # wrap="none" to disable text wrapping
+    text_widget.pack(fill="both", expand=True)  # fill the entire window
+    # Open and read the text file
+    file_path = r"C:\Users\Aniruddh.Chauhan\Documents\Bugzilla Data Mining\source\top_keywords.txt"  # Replace with the path to your text file
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            file_contents = file.read()
+            text_widget.insert("1.0", file_contents)  # Insert the file contents into the Text widget
+    except FileNotFoundError:
+        text_widget.insert("1.0", "File not found.")
+    # Start the Tkinter main loop
+    root.mainloop()
+def display_grouped_data():
+    root = tk.Tk()
+    root.title("Text File Viewer")
+    # Create a Text widget to display the file contents
+    text_widget = tk.Text(root, wrap="none")  # wrap="none" to disable text wrapping
+    text_widget.pack(fill="both", expand=True)  # fill the entire window
     # Open and read the text file
     file_path = r"C:\Users\Aniruddh.Chauhan\Documents\Bugzilla Data Mining\source\grouped_issues_based_on_keywords.txt"  # Replace with the path to your text file
     try:
@@ -103,11 +143,8 @@ def display_grouped_data():
             text_widget.insert("1.0", file_contents)  # Insert the file contents into the Text widget
     except FileNotFoundError:
         text_widget.insert("1.0", "File not found.")
-
     # Start the Tkinter main loop
     root.mainloop()
-
-
 
 # Make the Window for the User Input 
 GUI_window = tk.Tk()
@@ -121,14 +158,15 @@ option_var = tk.StringVar()
 option_var.set("Crane PLC")  # Set the default option
 option_dropdown = ttk.OptionMenu(GUI_window, option_var, *search_options)
 option_dropdown.pack()
-
 # Create a button to perform the search
 search_button = ttk.Button(GUI_window, text="Search", command = search_components)
 search_button.pack()
-
 display_button = ttk.Button(GUI_window, text="Output", command = display_grouped_data)
 display_button.pack()
-
+keywords_button = ttk.Button(GUI_window, text="Keywords", command = display_keywords)
+keywords_button.pack()
+top_keywords_button = ttk.Button(GUI_window, text="Top Keywords", command = display_top_keywords)
+top_keywords_button.pack()
 result_label = ttk.Label(GUI_window, text="")
 result_label.pack()
 progress_bar = ttk.Progressbar(GUI_window, orient='horizontal',mode='determinate',length=280)

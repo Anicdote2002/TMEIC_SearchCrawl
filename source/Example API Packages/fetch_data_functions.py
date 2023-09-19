@@ -12,6 +12,8 @@ import os
 import re
 import nltk
 from nltk.corpus import stopwords
+import tkinter as tk
+from tkinter import ttk
 
 def get_json_data():
     base_url = "https://tools.tmeic.com/mh/rest/bug"
@@ -20,7 +22,6 @@ def get_json_data():
     response = requests.get(url)
     json_data = response.json()  # gets .json of bugs from bugzilla
     return json_data
-
 
 def generate_common_stopwords():
     common_words = set(stopwords.words('english'))
@@ -37,7 +38,6 @@ def generate_common_stopwords():
     common_words.update(custom_stopwords)
     common_words_list = list(common_words)
     return common_words_list
-
 
 def preprocess_text(text):
     # Remove punctuation and extra whitespace while preserving case
@@ -61,3 +61,7 @@ def keyword_max_counter(filtered_data):
     word_counts = Counter(filtered_data_wrds)# Count the frequency of each word
     max_word, max_count = word_counts.most_common(1)[0]# Find the word with the maximum frequency
 
+def get_top_keywords(keyword_list, top_n=20): 
+    keyword_counts = Counter(keyword_list) # Count the occurrences of each keyword
+    top_keywords = keyword_counts.most_common(top_n)  # Get the top N keywords
+    return top_keywords

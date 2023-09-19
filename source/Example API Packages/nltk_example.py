@@ -30,6 +30,6 @@ def text_similarity(text1, text2):
     return similarity
 
 
-text_1 = "Hello, My name is Aniruddh Chauhan and I am a Computer Engineer. I am also a student at Virginia Tech."
-text_2 = "I am Aniruddh Chauhan a Computer Engineering Student at Virginia Tech"
+text_1 = "I hereby extend my sincere gratitude to you for your invaluable assistance with our project. Your contributions have greatly contributed to our success, and we are truly appreciative of your dedication and hard work"
+text_2 = "Hey, just wanted to say thanks a ton for all your help with the project! You've been awesome, and we couldn't have done it without you. Big high-five for your super hard work!"
 print(text_similarity(text_1, text_2))
