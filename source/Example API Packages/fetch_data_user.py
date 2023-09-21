@@ -19,6 +19,7 @@ import fetch_data_functions
 from nltk.corpus import stopwords
 
 pattern = r'\b[a-zA-Z]+\b'
+flags = re.IGNORECASE
 json_data = fetch_data_functions.get_json_data()
 common_words_list = fetch_data_functions.generate_common_stopwords()
 
@@ -41,22 +42,23 @@ def search_components():
     pre_issue_list = [fetch_data_functions.preprocess_text(sentence) for sentence in issue_list]
     # Get Filtetred Data i.e. relevant Keywords 
     filtered_data  = [fetch_data_functions.remove_words(summary, pre_common_words_list) for summary in pre_issue_list]
-    fetch_data_functions.keyword_max_counter(filtered_data)
-    
+    fetch_data_functions.keyword_max_counter(filtered_data)   
     # Generate Keyword List and Output list in a txt file
-    unique_keywords_set = set() 
-    repeated_keywords_list = []
-
+    keywords_set = set() 
     for filtered_sum in filtered_data:
-        valid_keyword = re.findall(pattern, filtered_sum) 
-        unique_keywords_set.update(valid_keyword)   
-        repeated_keywords_list.extend(valid_keyword)  
-
-    unique_keywords_list = list(unique_keywords_set) 
-    top_keywords_list = fetch_data_functions.get_top_keywords(repeated_keywords_list, 20) # Sus, Redo this line
+        valid_keywords = re.findall(pattern, filtered_sum) # This line ensures all valid words are evaluated, i.e. no blankspace, whitespace etc    
+        keywords_set.update(valid_keywords)   
+    keywords_list = list(keywords_set)   
+    
+    for i in range (0, len(keywords_list)):
+        for j in range (0, len(keywords_list)):
+            if (keywords_list[i].lower() == keywords_list[j].lower()):
+                keywords_list[j] = keywords_list[i] 
+   
+    top_keywords_list = fetch_data_functions.get_top_keywords(keywords_list, 20) # Sus, Redo this line
 
     with open("keyword_list.txt", "w") as keyword_file:
-            for item in unique_keywords_list:
+            for item in keywords_list:
                 keyword_file.write(item + "\n") 
     with open("top_keywords.txt", "w") as top_keywords_file:
         for keyword, count in top_keywords_list:
@@ -66,13 +68,13 @@ def search_components():
     grouped_summaries = {}  
     grouped_bug_ids   = {}
     # grouped_comments  = {}
-    for keyword in unique_keywords_list:
+    for keyword in keywords_list:
         grouped_summaries[keyword] = [] # Initialize an Empty list for similar summaries with the keywords as the key in the dictionary i.e. <key>Keyword <value>Summaries List
         grouped_bug_ids  [keyword] = [] # Initialize an Empty list for similar summaries's bug ids with the keywords as the key in the dictionaryi.e. <key>Keyword <value>Bug IDs List
       # grouped_comments [keyword] = []
         for bug in json_data["bugs"]:
             if (bug ["component"] == selected_option): 
-                if keyword in bug["summary"].split():
+                if keyword.lower() == (x.lower for x in bug["summary"].split()):
                    grouped_summaries[keyword].append(bug["summary"]) # Append to list of the summaries under a particular keyword
                    grouped_bug_ids  [keyword].append(bug["id"])      # Append to list of the bug ids
                   # grouped_comments [keyword].append(bug["comment"]) 

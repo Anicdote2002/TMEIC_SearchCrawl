@@ -50,7 +50,6 @@ def preprocess_filter_words(words_to_filter):
 
 def remove_words(summary, words):
     for word in words:      
-       # summary = summary.replace(f' {word} ', ' ')  
         summary = re.sub(r'\b%s\b' % f'{word}', '', summary)
     return summary.strip()
 # Remove the common words from each sentence in the list and store the modified sentences
